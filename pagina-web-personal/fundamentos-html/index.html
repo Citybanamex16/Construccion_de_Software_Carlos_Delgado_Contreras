@@ -2,33 +2,53 @@
 <html lang = "es">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carlos Delgado Contrera's Dev log</title>
+    <!-- Estilos internos del documento -->
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body{
+        padding: 20px;
+        margin: 20px;
+        background-color: blueviolet ;
+
+      }
+
+
+
+
+    </style>
+
+    <link rel="stylesheet" href="mypage.css">
+
   </head>
 
   <body>
 
     <!-- Primer Bloque -->
-    <h1>Game Dev Log and Proyects</h1>
+    <h1 style="text-align: center;">Game Dev Log and Proyects</h1>
     <p>¡Hi! I'm Carlos Delgado Contreras, a Mexican programmer deeply passionate about video game development. Since I was young, videogames have been present in my life. In Highscool I discover my enthusiams and interest in programming. Due to this I enrolled myself in the career of Engeneering in Computational Technologies in the univeristy of Tec De Monterrey. In this Webpage you will be able to find and discover my game projects, updates in current games, dev logs, Game Jams and the Students groupe I belong to. ¡Hope you like it and thank you :) !  </p>
 
     <!-- Segundo Bloque -->
 
 
 
-    <!-- Tercer Bloque:Juegos -->
+    <!-- Tercer Bloque: Mis juegosJuegos -->
 
     <section>
-      <h2> My Portafolio</h2>
+      <h1> My Portafolio</h1>
 
-    <article>
+    <article class= "Ficha_juego">
       <!-- Frontline -->
         <h2>Frontline</h2>
         <p><strong>Genre: </strong> Tower Defense</p>
         <p><strong>My Rol:</strong> Solo Developer</p>
         <p><strong>Dev State: </strong> Finished and Published</p>
-
-
-     
       
       <figure>
         <img src="Frontline.png" width="600" alt="Imagen Gameplay de Frontline">
@@ -40,13 +60,13 @@
       </p>
 
       <p>
-      <a href="https://citybanamex16.itch.io/frontline"  target="_blank"> 
+      <a href="https://citybanamex16.itch.io/frontline"  target="_blank" class="Link_Juego"> 
       ¡Play Frontline on Itch.io!
     </a>
       </p>
 
 
-      <section>
+      <section class ="Tech_list">
         <h3> Technologies Used </h3>
         <ul>
           <li> Godot Engine 4.1 </li>
@@ -67,9 +87,10 @@
 
 
 
-      <article>
+      
       <!-- Memory of a Mask -->
       
+      <article class= "Ficha_juego">
         <h2>A Memory of Masks</h2>
         <p><strong>Genre: </strong> Murder Mystery</p>
         <p><strong>My Rol:</strong> Programmer and Designer</p>
@@ -87,13 +108,13 @@
       <p>A Momery of Masks is a Murder Mystery game where the player has to uncover the riddle behind the curse cast upon a royal party. Doomed to use unremovable masks, the player has to deduce his opponent mask for using the correct one. Interrgoate the party members, use the correct masks, win the clues and uncover who is behinf the Red Mask </p>
 
       <p>
-      <a href="https://outer-games-studio.itch.io/a-memory-of-masks"  target="_blank"> 
+      <a href="https://outer-games-studio.itch.io/a-memory-of-masks"  target="_blank" class="Link_Juego"> 
       ¡Play A Momery of Masks on Itch.io!
     </a>
       </p>
 
 
-      <section>
+      <section class ="Tech_list">
         <h3> Technologies Used </h3>
         <ul>
           <li> Godot Engine 4.3 </li>
@@ -115,10 +136,11 @@
 
 
 
-      <article>
+     
       <!-- Proyect Amaterasu-->
+       <article class= "Ficha_juego">
       
-        <h2>Proyect Amaterasu</h2>
+        <h2 id="Amaterasu">Proyect Amaterasu</h2>
         <p><strong>Genre: </strong> 2D Pixel Rogue-like</p>
         <p><strong>My Rol:</strong> Director</p>
         <p><strong>Dev State: </strong> In Development</p>
@@ -133,7 +155,7 @@
 
       <p>Project Amaterasu is an incomig 2D Pixel Art Rogue-like shooter for PC and consoles. This proyect is currently developed by Outer Games Studio and has a release date for June 2026. </p>
 
-      <section>
+      <section class ="Tech_list">
         <h3> Technologies Used </h3>
         <ul>
           <li> Godot Engine 4.3 </li>
