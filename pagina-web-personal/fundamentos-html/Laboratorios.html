@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<htm langl = "es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Carlos Delgado Contrera's Lab Answers</title>
+</head>
+<body>
+
+<!-- Sección de Q&A-->
+    <section>
+    <h4>Sección de Lab 1</h4>
+
+
+      <article>
+        <h5>Question 1</h5>
+        <p>Question: ¿Cuál es la diferencia entre Internet y la World Wide Web?</p>
+        <p> Answer: El internet es la infrestructura física de servidores y ordenadores conectados a traves del mundo la cual genera una red de redes. El internet es lo que hace capaz el intercambio de información como por ejemplo en correos, transaciones y la famosa Web. La World Wide Web por su parte es una arquitectura digital operando sobre internet que permite la transmisión y representación de mutitud de tipos de datos. Es tan versatil que es de los servicios mas populares que corren sobre el internet. Un usuario solo necesita un navegador para poder compartir y recibir información. Por lo que hemos dicho, el internet es la parte solida y de hardware que funge como cimiento para que servicios de software como la WWW puedan funcionar.  </p>
+        <p> Reference: Berghel, H., & Blank, D. (1999). The world wide web. In Advances in computers (pp. 179–218). https://doi.org/10.1016/s0065-2458(08)60020-0</p>
+      </article>
+
+
+         <article>
+        <h5>Question 2</h5>
+        <p>Question: ¿Cuáles son las partes de un URL? </p>
+        <p> Answer: La WWW fue la primera tecnología en estandarizar la Hipervinculación de cibermedios. Los Localizadores Uniformes de Recursos (URL)estan conformador por los siguientes componentes</p>
+        <ul>
+          <li> Protocolo: Son las reglas establecidas para la transimisión de datos (http o https) </li>
+           <li> Subdominio: Sirve para separar el servicio de la WWW de otros servicios de internet como el correo electronico. </li>
+            <li> TLD o Dominio Superior: Indica el tipo de organización o el país de origen </li>
+             <li> Ruta Camino: El la ubicación exacta de un recurso en el servidor </li>
+        
+         <li> Ancla: En caso de querer dirigir a una parte especifica de la misma apgina, se usa el ancla para especificar la sección especifica </li>
+      </ul>
+      <p> Reference: ¿Qué es una URL? - Aprende desarrollo web | MDN. (2025, March 27). https://developer.mozilla.org/es/docs/Learn_web_development/Howto/Web_mechanics/What_is_a_URL </p>
+      </article>
+
+
+      <article>
+        <h5>Question 3</h5>
+        <p>Question: ¿Cuál es el propósito de los métodos HTTP: GET, HEAD, POST, PUT, PATCH, DELETE?</p>
+        <p> Answer: Los metodos o verbos HTTP son parte del protocolo HTTP, que es el lenguaje universal que hablan todos los navegadores y servidores. No pertenecer ni a HTML ni a JavaScript. Son las reglas y capacidades nativas de la propia World Wide Web</p>
+        <ul>
+          <li>GET: Solicita un recurso especifico con la finalidad de solo recuperar datos. Como en esta pagina :)  </li>
+          <li> Head: Head solicita, igual que get, datos especificos no obstante solo 
+          recupera los encabezados </li>
+        
+        <li>
+          POST: Envía un dato especifico a un servidor. Provocando un cambio de estado y registrando un nuevo recurso con un nuevo ID
+        </li>
+        <li>
+          PUT: Por otro parte, PUT envía un dato a un servidor REMPLAZANDO un dato existente. 
+        </li>
+        <li> DELETE:Borra un dato 
+        </li>
+      </ul>
+
+        <p> Reference: Métodos de petición HTTP - HTTP | MDN. (n.d.). https://developer.mozilla.org/es/docs/Web/HTTP/Reference/Methods</p>
+      </article>
+
+
+      
+      <article>
+        <h5>Question 4</h5>
+        <p>Question: ¿Qué método HTTP se debe utilizar al enviar un formulario HTML, por ejemplo cuando ingresas tu usuario y contraseña en algún sitio? ¿Por qué? </p>
+        <p> Answer: La mejor opción es utilizar el verbo POST pues este verbo no añade directamente los datos en la dirección web como lo haría GET. </p>
+        <p> Reference: Sending form data - Aprende desarrollo web | MDN. (2025, June 20). https://developer.mozilla.org/es/docs/Learn_web_development/Extensions/Forms/Sending_and_retrieving_form_data</p>
+      </article>
+
+
+      <article>
+        <h5>Question 5</h5>
+        <p>Question: ¿Qué método HTTP se utiliza cuando a través de un navegador web se accede a una página a través de un URL? </p>
+        <p> Answer: El verbo HTTP utilizado es GET. Este verbo solicita al servidor que recupere y le envíe datos. Por ejemplo esta pagina web solo esta usando el metodo GET para desplegarse. No hay interacción ni cambios pues no se usan otros metodos como POST o PUT.</p>
+        <p> Reference: Métodos de petición HTTP - HTTP | MDN. (n.d.). https://developer.mozilla.org/es/docs/Web/HTTP/Reference/Methods</p>
+      </article>
+
+
+     
+      <article>
+        <h5>Question 6</h5>
+        <p>Question: Un servidor web devuelve una respuesta HTTP con código 200. ¿Qué significa esto? ¿Ocurrió algún error?</p>
+        <p> Answer: El codigo 200 es la señal mas clara de exito en el desarrollo web. El servidor la emite al cliente para indicar que el verbo emitidos (GET,POST,PUT,etc) se a realizado con exito.</p>
+        <p> Reference: 200 OK - HTTP | MDN. (2025, July 4). https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/200</p>
+      </article>
+
+       <!-- Question Template, erase when finished-->
+      <article>
+        <h5>Question 7</h5>
+        <p>Question: ¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 404? ¿Por qué?</p>
+        <p> Answer: El error 404 no indica que hay un error inherente en el codigo de la pagina. Este error aparece cuando el contenido de la web ya no coincide con la URL proporcionada. Esto puede ser causado por un sinfin de factores: Errores en el servidor, DNS nuevas, Cache, etc. A diferencia del error 500 que este SI indica error en codigo. El error 404 no es señal de fallo total pero si de inspección de ambiente </p>
+        <p> Reference: ¿Qué significa el error “404 not found”? (2025, November 14). IONOS Digital Guide. https://www.ionos.mx/digitalguide/paginas-web/creacion-de-paginas-web/que-significa-el-error-404-not-found/</p>
+      </article>
+
+
+      
+      <article>
+        <h5>Question 8</h5>
+        <p>Question: ¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 500? ¿Por qué? </p>
+        <p> Answer: Si, el error 500 indica que el servidor no encontro por ejemplo variables en el codigo. Por lo que manda este error.  </p>
+        <p> Reference: Códigos de estado de respuesta HTTP - HTTP | MDN. (2025, July 7). https://developer.mozilla.org/es/docs/Web/HTTP/Reference/Status</p>
+      </article>
+
+
+          <!-- Question Template, erase when finished-->
+      <article>
+        <h5>Question 9</h5>
+        <p>Question: ¿Qué significa que un atributo HTML5 esté depreciado o desaprobado (deprecated)? Menciona algunos elementos de HTML 4 que en HTML5 estén desaprobados. </p>
+        <p> Answer: Existen metodos de HTML que han sido remplazados, actualizaso u optimizados de alguna u otra forma con el paso del tiempo. Los navegadores se acoplan a estas actualizaciones y dejan de darle soporte a los "Viejos Metodos". Por ejemplo el metodo para centrar imagener CENTER (que trate de usar) a sido remplazado por un metodo en CSS el cual es mas efectivo. Si utilizas el arcaico center es probable que algunos navegadores ya no cuenten con soporte para este comando y no lo procesen.</p>
+      </article>
+
+
+     
+      <article>
+        <h5>Question 10</h5>
+        <p>Question: ¿Cuáles son las diferencias principales entre HTML 4 y HTML5?</p>
+        <p> Answer: La primordial diferencia entre HTML 4 y HTML 5 es que este ultimo engloba mas tecnologías que lo hacen mas dinámico, poderoso y en especial independiente. La vieja versión de HTML 4 se apoyaba mucho de tecnologías como CSS,JS,Flash (antes),etc. Ahora HTML5 se independiza y llega a ser capaz de generar aplicaciones web con una ayuda mas auxiliar por parte de estas tecnologías externas.  </p>
+        <p> Reference: Barron, B. (2025, February 14). HTML vs HTML5: Conoce las diferencias cruciales entre ellos. Kinsta®. https://kinsta.com/es/blog/html-vs-html5/</p>
+      </article>
+
+
+
+      
+      <article>
+        <h5>Question 11</h5>
+        <p>Question: ¿Qué componentes de estructura y estilo tiene una tabla?</p>
+        <p> Answer: En su complitud, una tabla se compone de table como contenedor, tr para fila, th para un header y td para celda de datos. Semanticamente, puedes usar theads, tbody y tfoot.</p>
+      </article>
+
+
+       <!-- Question Template, erase when finished-->
+      <article>
+        <h5>Question 12</h5>
+        <p>Question: ¿Cuáles son los principales controles de una forma HTML5? </p>
+        <p> Answer: Etiquetas acompañadas de input como lo serían textarea, select, button, range, etc conforman las principales formas de control.  </p>
+        <p> Reference:</p>
+      </article>
+
+
+
+
+       <article>
+        <h5>Question 13</h5>
+        <p>Question: ¿Qué tanto soporte HTML5 tiene el navegador que utilizas?</p>
+        <p> Answer: Google Chrome cuenta con 526 puntos de los 555 siendo video & multimedia donde mas fallos tiene 29/33.  </p>
+        <p> Reference:</p>
+      </article>
+
+
+       <!-- Question Template, erase when finished-->
+      <article>
+        <h5>Question 14</h5>
+        <p>Question: ¿Cuál es el ciclo de vida de los sistemas de información? & ¿Cuál es el ciclo de desarrollo de sistemas de información?</p>
+        <p> Answer: El ciclo de vida de un sistema de información engloba una serie de etpas en la vida de un sistema que abarca desde su concepción como una solución tecnologica hasta su retirada. El ciclo de desarrollo por su parte son la serie de pasos a tomar para que una solución tecnologica evolucione y germine en un sistema que satisfaga las necesidades del usuario. Este ciclo incluye etapas como el Análisis de Requerimietnos y Diseño hasta el despliegue y mantenimiento. </p>
+        <p> Reference:</p>
+      </article>
+
+    </section>
+
+
+    <section>
+      <h1>Seccion de Lab 2</h1>
+
+          <!-- Question Template, erase when finished-->
+      <article>
+        <h5>Question x</h5>
+        <p>Question: </p>
+        <p> Answer: </p>
+        <p> Reference:</p>
+      </article>
+
+      
+
+      <article>
+        <h2> Question 1</h2>
+        <p>Question Como ingeniero de software ¿cuál es tu recomendación sobre el uso de !important en un CSS? </p>
+        <p>Answer: En mi punto de vista es un mal habito el uso de !important en un archivo CSS. Recordamos que !Important es un comando que fuerza un estilo dentro de la jerarquía de cascada de CSS. Funciona como un "Comodín" que solapa la jerarquía natural del lenguaje. Este uso del comodín es un "Parche" de un problema mas grande: No comprender tu propia jerarquía de estilos CSS. Un parche no es una solución y habrá un momento en que ni con Comodines podras arreglar tu desastre. ¿Necesitaremos Comodines de Comodines ?</p>
+      </article>
+
+
+          <article>
+        <h5>Question 2</h5>
+        <p>Question:Si se pone una imagen de fondo en una página HTML, ¿por qué debe escogerse con cuidado? </p>
+        <p> Answer: Al poner una imagen de fondo de TODA la pagina debemos de tomar en cuenta muchos factores en juego. Primero el viewport o la combinación de Margins,padding y Borders ¡Cambia con la pantalla! Debemos de cuidar que la imagen no quede rara. Por otro lado, la resolución de la imagen debe de ser tal para que al cubrir toda la pagina no se pierda la calidad.</p>
+      </article>
+
+
+      <article>
+        <h5>Question 3</h5>
+        <p>Question: Como ingeniero de software, ¿cuál es tu recomendación al elegir las unidades de un propiedad de estilo entre %, px y pt? </p>
+        <p> Answer: Las unidades de px, % & pt pueden llegar a ser "Ambiguas" para el programador novato. Uno no sabe tener el concepto espacial de dichas unidades. La mejor solución que propongo es establecer un minimo. Un valor de px, % o pt que sea tu ancla de minimo valor. Los demas valores los vas escalando segun tu referencia minima. Ejemplo un valor medio en tamaño puede ser 2 veces uno minimo. De esta forma puedes mantener CONSISTENCIA de tamaños en tu pagina web.  </p>
+        <p> Reference:</p>
+      </article>
+
+
+      <article>
+        <h5>Question 4</h5>
+        <p>Question: ¿Por qué el uso de una versión minimizada del CSS mejora el rendimiento del sitio?</p>
+        <p> Answer: La clave esta en entender como el navegador lee nuestro archivo HTML. Para poder extraer ordener e interpretarlas de nuestro documento HTML, el navegador debe de Parsear nuestro archivo. Debe de ir linea por linea identificando caracteres y valores. Espacios en blanco -> desperdicio de parseo. Al eliminar los espacios en blanco y los comentarios, no solo estamos reduciendo el tamaño del archivo sino simplificando el proceso de parseo. </p>
+        <p> Reference: Minify CSS | Reduce file sizes for faster loading | Cloudflare. (n.d.). https://www.cloudflare.com/learning/performance/how-to-minify-css/</p>
+      </article>
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+</body>
+</html>

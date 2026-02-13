@@ -54,7 +54,7 @@ h1{
   background: #222;
   padding: 10px 20px;
   border-radius: 5px;
-  /* Transición suave para que no sea un cambio brusco */
+  
   transition: all 0.3s ease; 
 }
 
@@ -65,5 +65,29 @@ h1{
 	color: red;
     text-decoration: none;
     font-weight: bold;
+}
+
+
+
+.Boton_enlace{
+	display: inline-block;
+	padding: : 24px;
+	background-color: blueviolet;
+	color: white;
+	text-decoration: none;
+	border-radius: 8px;
+	font-weight: bold;
+	transition: all 0.3s ease;
+	box-shadows: 0px 4px 6px rgba(0,0,0.1);
+}
+
+.Boton_enlace:hover{
+	background-color: #3700b3; 
+  transform: translateY(-3px); 
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2); 
+}
+
+.Boton_enlace:active{
+	transform: translateY(0px);
 }
 
