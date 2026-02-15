@@ -15,15 +15,15 @@
       body{
         padding: 20px;
         margin: 20px;
-        background-color: blueviolet ;
+        background-color: white ;
 
       }
 
 
-
-
     </style>
 
+    
+    <link rel="stylesheet" href="bulma.min.css">
     <link rel="stylesheet" href="mypage.css">
 
   </head>
@@ -31,7 +31,7 @@
   <body>
 
     <!-- Primer Bloque -->
-    <h1 style="text-align: center;">Game Dev Log and Proyects</h1>
+    <h1 class="title is-1 has-text-centered">Game Dev Log and Proyects</h1>
     <p>¡Hi! I'm Carlos Delgado Contreras, a Mexican programmer deeply passionate about video game development. Since I was young, videogames have been present in my life. In Highscool I discover my enthusiams and interest in programming. Due to this I enrolled myself in the career of Engeneering in Computational Technologies in the univeristy of Tec De Monterrey. In this Webpage you will be able to find and discover my game projects, updates in current games, dev logs, Game Jams and the Students groupe I belong to. ¡Hope you like it and thank you :) !  </p>
 
     <!-- Segundo Bloque -->
@@ -41,56 +41,74 @@
     <!-- Tercer Bloque: Mis juegosJuegos -->
 
     <section>
-      <h1> My Portafolio</h1>
+      <h1 class="subtitle is-3"> My Portafolio</h1>
 
-    <article class= "Ficha_juego">
-      <!-- Frontline -->
-        <h2>Frontline</h2>
+
+       <!-- Frontline -->
+    <div class="box has-text-centered p-6 m-6 Ficha_juego">
+    <article>
+      <div class="content">
+        <h2 class="title is-2">Frontline</h2>
         <p><strong>Genre: </strong> Tower Defense</p>
         <p><strong>My Rol:</strong> Solo Developer</p>
         <p><strong>Dev State: </strong> Finished and Published</p>
       
-      <figure>
+      <figure class="image is-5by4 ">
+
         <img src="Frontline.png" width="600" alt="Imagen Gameplay de Frontline">
-        <figcaption> Main Gameplay of Frontline</figcaption>
+
+        <figcaption class="has-text-centered has-text-grey-dark"> 
+        Main Menu of Frontline
+      </figcaption>
+
       </figure>
+
       
 
       <p>Frontline, is a Top-Down Pixel Art videogame setted in the 2nd world war where the player plays the role of a british soldier entreched in the trench war's. Defend the Ally trench from the Axis enemies in this action-packed tower-defense game that combines presicion, timing and quick reflexes. 
       </p>
 
-      <p>
-      <a href="https://citybanamex16.itch.io/frontline"  target="_blank" class="Link_Juego"> 
-      ¡Play Frontline on Itch.io!
-    </a>
-      </p>
 
-
-      <section class ="Tech_list">
-        <h3> Technologies Used </h3>
-        <ul>
+      
+      <section >
+        <h3 class="subtitle is-4 mb-0"> Technologies Used </h3>
+        <ol type="i" class="is-inline-block has-text-left ml-0 mb-4">
           <li> Godot Engine 4.1 </li>
           <li> GDScript </li>
           <li> Pixel Art  </li>
           <li> Topdown View </li>
 
-        </ul>
+        </ol>
 
       </section>
+   
 
-
+      <section>
       <footer>
         <p> Frontline was published on Itch.io on <time datetime="2025-03-12"> March 23, 2025 </time></p>
       </footer>
-      
+
+      <p>
+      <a href="https://citybanamex16.itch.io/frontline"  target="_blank" class="button is-link is-medium Link_Juego"> 
+      ¡Play Frontline on Itch.io!
+    </a>
+      </p>
+      </section>
+
+
+
+  </div> <!-- content div -->
     </article>
+  </div>
 
 
 
       
       <!-- Memory of a Mask -->
-      
+     <div class="box">
       <article class= "Ficha_juego">
+        
+
         <h2>A Memory of Masks</h2>
         <p><strong>Genre: </strong> Murder Mystery</p>
         <p><strong>My Rol:</strong> Programmer and Designer</p>
@@ -131,14 +149,16 @@
       <footer>
         <p> A Memory of Masks was published on Itch.io on <time datetime="2025-03-12"> March 23, 2025 </time></p>
       </footer>
+ 
       
     </article>
+    </div>
 
 
-
-     
+     <div class="block">
       <!-- Proyect Amaterasu-->
        <article class= "Ficha_juego">
+        
       
         <h2 id="Amaterasu">Proyect Amaterasu</h2>
         <p><strong>Genre: </strong> 2D Pixel Rogue-like</p>
@@ -188,7 +208,9 @@
       </footer>
       
     </article>
+
   </section>
+
 
 
 <!-- Template de boton con enlace -->
@@ -205,7 +227,7 @@
     <p> <a href="https://www.sublimetext.com/"> IDE utilizado: Sublime Text </a> </p>
     </footer>
 
-
+    <script src="script.js"></script>
   </body>
 
 

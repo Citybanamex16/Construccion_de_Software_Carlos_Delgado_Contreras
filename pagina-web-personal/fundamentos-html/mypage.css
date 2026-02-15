@@ -4,23 +4,17 @@ body {
 }
 
 .Ficha_juego{
-	/** Estilo de Texto **/
-	text-align: center;
-	line-height: 1.25;
 
 
 	/** Estilo de Article */
-	background-color: burlywood;
 	border: 6px solid gray;
+	box-shadow: 10px 20px 15px #888888;
 	padding: 20px;
 	margin: 40px;
 
 }
 
-.Ficha_juego h2{
-	font-size: 35px;
-	text-shadow: 0px 0px 6px gold;
-}
+
 
 
 .Tech_list ul {
@@ -49,11 +43,7 @@ h1{
 
 .Link_Juego {
   display: inline-block;
-  text-decoration: none;
-  color: #fff;
-  background: #222;
   padding: 10px 20px;
-  border-radius: 5px;
   
   transition: all 0.3s ease; 
 }
@@ -62,7 +52,7 @@ h1{
 
 
 .Link_Juego:hover{
-	color: red;
+	color: orange;
     text-decoration: none;
     font-weight: bold;
 }
@@ -90,4 +80,14 @@ h1{
 .Boton_enlace:active{
 	transform: translateY(0px);
 }
+
+
+
+/** Bulma */
+
+
+
+
+
+
 
