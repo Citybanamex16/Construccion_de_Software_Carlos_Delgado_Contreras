@@ -15,7 +15,7 @@
       body{
         padding: 20px;
         margin: 20px;
-        background-color: white ;
+        background-color: rgb(228, 190, 155) ;
 
       }
 
@@ -29,13 +29,19 @@
   </head>
 
   <body>
-
-    <!-- Primer Bloque -->
+    <!-- Bloque 0: Banner de Pagina -->
+      
+  <!-- Primer Bloque: Titulo E introducción -->
+    <div class="box has-text-centered" style="background-color: rgb(68, 100, 100);">
+    
     <h1 class="title is-1 has-text-centered">Game Dev Log and Proyects</h1>
     <p>¡Hi! I'm Carlos Delgado Contreras, a Mexican programmer deeply passionate about video game development. Since I was young, videogames have been present in my life. In Highscool I discover my enthusiams and interest in programming. Due to this I enrolled myself in the career of Engeneering in Computational Technologies in the univeristy of Tec De Monterrey. In this Webpage you will be able to find and discover my game projects, updates in current games, dev logs, Game Jams and the Students groupe I belong to. ¡Hope you like it and thank you :) !  </p>
 
-    <!-- Segundo Bloque -->
+    </div>
 
+    <!-- Segundo Bloque: Navegación -->
+
+ 
 
 
     <!-- Tercer Bloque: Mis juegosJuegos -->
@@ -50,7 +56,7 @@
       <div class="content">
         <h2 class="title is-2">Frontline</h2>
         <p><strong>Genre: </strong> Tower Defense</p>
-        <p><strong>My Rol:</strong> Solo Developer</p>
+        <p><strong>My Rol:</strong> Director and Solo Developer</p>
         <p><strong>Dev State: </strong> Finished and Published</p>
       
       <figure class="image is-5by4 ">
@@ -214,25 +220,47 @@
 
 
 <!-- Template de boton con enlace -->
-  <div>
-    <a href="Laboratorios.html" class="Boton_enlace"> Ir a Laboratorios</a>
+<div class="columns"> 
+
+
+<div class="column is-narrow">
+  
+
+  <div class="dropdown is-hoverable">
+  <div class="dropdown-trigger">
+    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu3">
+      <span>Labs and Resources</span>
+      <span class="icon is-small">
+        <i class="fas fa-angle-down" aria-hidden="true"></i>
+      </span>
+    </button>
+  </div>
+  <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+    <div class="dropdown-content">
+      <a href="Laboratorios.html" class="dropdown-item Boton_enlace has-text-centered"> Labs </a>
+      <a class="dropdown-item Boton_enlace has-text-centered"> JavaScript </a>
+    </div>
   </div>
 
 
+</div>
+</div>
+
+</div>
+
+
+  <div class="block has-text-centered" style="background-color: rgb(68, 100, 100);">
     <footer>
     <p><strong>Nombre:</strong> Carlos Delgado Contreras</p>
     <p><strong>Matrícula:</strong> A01712819</p>
     <p><strong>Correo:</strong> A01712819@tec.mx</p>
     <p>Construcción de Software y Toma de Decisiones</p>
     <p> <a href="https://www.sublimetext.com/"> IDE utilizado: Sublime Text </a> </p>
-    </footer>
+    </footer> </div>
+    
 
     <script src="script.js"></script>
   </body>
-
-
-
-
 
 
 
