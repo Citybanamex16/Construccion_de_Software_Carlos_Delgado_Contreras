@@ -199,12 +199,28 @@ if(option === 1){
 
 	}
 	alert("¡Gracias por jugar!")
+	escribir_status_jugador(myhero.get_name(),myhero.get_level())
 
 }
 else{
 	alert("Omitiendo juego");
-	escribir_status_jugador()
+	
 }
+
+function escribir_status_jugador(nombre,nivel){
+	document.write(`<article>
+		<h1> Datos Fin de partida </h1>
+		<ol>
+			<li> Nombre: ${nombre} </li>
+			<li> Nivel: ${nivel} </li>
+		</ol>
+		</article>
+
+`)
+
+
+}
+
 
 //Funciones de minijuego
 
