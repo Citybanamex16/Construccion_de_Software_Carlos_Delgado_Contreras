@@ -144,6 +144,14 @@ class Hero{
 		return `${this.name} tus stats son las siguientes -> nivel: ${this.#level}`;
 	}
 
+	get_name(){
+		return this.name;
+	}
+
+	get_level(){
+		return this.#level;
+	}
+
 
 }
 
@@ -195,10 +203,8 @@ if(option === 1){
 }
 else{
 	alert("Omitiendo juego");
+	escribir_status_jugador()
 }
-
-
-
 
 //Funciones de minijuego
 
