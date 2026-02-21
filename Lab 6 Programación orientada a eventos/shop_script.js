@@ -54,14 +54,15 @@ class product{
 }
 
 const game_frontline = new product("Frontline",500);
+const game_mask = new product ("A Memory of Masks", 750);
 
 const micarrito = new carrito();
 
 
 //Diccionario de catalogo -> {id:producto} puente elemento == objeto
 const catalogo_juegos = {
-	"frontline":game_frontline
-
+	"frontline":game_frontline,
+	"mask":game_mask
 };
 
 
@@ -93,7 +94,10 @@ function on_buy_button_pressed(event){
 	//Al carrito de compras le agregamos el producto vinculado al boton de compra
 	//Primero: obtenems el ID de boton que se presionó
 	const id = event.currentTarget.id; //id unico del buy button
-	const gameID = event.currentTarget.dataset.gameID;
+	const gameID = event.currentTarget.dataset.gameId;
+
+
+	console.log(`este es mi GameID ${gameID}`);
 
 	//Segundo, vinculamos el ID (es una llave en el diccionario) del boton con su correspondiente objeto 
 	const producto_seleccionado = catalogo_juegos[id];
@@ -105,9 +109,14 @@ function on_buy_button_pressed(event){
 
 		//Obtenems la cantidad correspondiente
 		for(const button of quantity_buttons){
-			if(button.dataset.gameID === gameID){
+			if(button.dataset.gameId === gameID){
+				console.log(`Vinculado ${button.dataset.gameID} con ${gameID}`);
 				new_quantity = button.valueAsNumber;
 				break;
+			}
+			else{
+				new_quantity = 0;
+
 			}
 
 		}
