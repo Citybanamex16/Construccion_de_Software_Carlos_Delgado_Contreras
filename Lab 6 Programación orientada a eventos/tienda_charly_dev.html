@@ -5,13 +5,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Charly_dev_shop</title>
 	<link rel="stylesheet" href="bulma.min.css">
+  <link rel="stylesheet" href = "Estilos.css">
 
 </head>
 <body>
 	<h1> ¡Welcome to Charly's Dev Shop! </h1>
 
+
+  <!-- Sección Juegos -->
 <section class="columns">
 
+
+  <!-- FrontlineBlock -->
   <div class="column is-half-desktop is-offset-one-quarter-desktop"> 
     
     <div class="box is-flex is-flex-direction-column is-align-items-center">
@@ -32,17 +37,42 @@
           </ol>
         </div>
 
+        <div class="box">
+          <input type="number" id="cantidad_frontline" class="cantidad" value="1" min="1" max="10" step="1" data-game-id="p01">
+        </div>
+          
         <div class = "button_container">
         	<a href="https://citybanamex16.itch.io/frontline" class="button" target="_blank">Try It!</a>
-        	<button class="button buybutton">No Info</button>
+        	<button id="frontline" class="button buybutton"  data-product-id="p01">No Info</button>
         </div>
 
-
-        
       </article>
     </div>
 
   </div>
+</section>
+
+
+ <!-- detalles de compra -->
+<section class="columns">
+  <div class="column">
+    <div class="box">
+        <article class="detalles_compra">
+          <output id="Total_pagar">???</output>
+          <p id="confirmacion"></p>
+          
+        </article>
+
+      
+    </div>
+    
+
+
+  </div>
+
+  
+
+
 </section>
 
 <script src="shop_script.js"></script>
