@@ -76,6 +76,15 @@ set_buy_buttons(buy_buttons)
 //Botones de cantidades de juego
 const quantity_buttons = document.getElementsByClassName("cantidad");
 
+//Info element arrays
+const info_buttons = document.getElementsByClassName("infobutton");
+set_info_buttons(info_buttons);
+const fichas_games = document.getElementsByClassName("game_info");
+const wrapps_games = document.getElementsByClassName("game_wrapper");
+const hide_info_buttons = document.getElementsByClassName("hideinfo");
+set_hidden_info_buttons(hide_info_buttons);
+
+
 //Ouput de total a pagar 
 const total_a_pagar = document.getElementById("Total_pagar");
 total_a_pagar.textContent = "Total en carrito: $0.00"
@@ -87,6 +96,68 @@ function update_total(){
 
 }
 
+
+function show_info(event){
+	//Se le pico a mas info 
+	console.log("Showing info");
+	//Paso 1: añadir el estado de activo en el Wrapper correspondiente
+	const game_id = event.currentTarget.dataset.gameId; //Id del producto del boton
+	console.log(`GameID: ${game_id}`)
+	const product_wrapper = Array.from(wrapps_games).find(el => el.dataset.gameId == game_id);
+
+
+	//Paso intermedio: Quitar el is-hidden de la ficha del juefo
+	const ficha_mostrar = Array.from(fichas_games).find(el => el.dataset.gameId == game_id);
+	
+
+	if(ficha_mostrar){
+		console.log("Hidden Quitado");
+		ficha_mostrar.classList.remove("is-hidden");
+	}
+	
+
+	//Paso 2: Si encontramos el wrapper correcto, le añadimos la clase de activo
+	if(product_wrapper){
+		product_wrapper.classList.add("father_active");
+		console.log("Añadido");
+	}
+	else{
+		console.log("Product Wrapper no encontrado");
+	}
+
+}
+
+function hidde_info(event){
+	//Se le pico a mas info 
+	console.log("hidding info");
+	//Paso 1: añadir el estado de activo en el Wrapper correspondiente
+	const game_id = event.currentTarget.dataset.gameId; //Id del producto del boton
+	console.log(`GameID: ${game_id}`)
+	const product_wrapper = Array.from(wrapps_games).find(el => el.dataset.gameId == game_id);
+	
+
+	//Paso intermedio: añadir el is-hidden de la ficha del juego
+	const ficha_mostrar = Array.from(fichas_games).find(el => el.dataset.gameId == game_id);
+	
+
+	if(ficha_mostrar){
+		console.log("Hidden añadido");
+		ficha_mostrar.classList.add("is-hidden");
+	}
+	
+
+	//Paso 2: Si encontramos el wrapper correcto, le añadimos la clase de default
+	if(product_wrapper){
+		product_wrapper.classList.remove("father_active");
+		product_wrapper.classList.add("father_default");
+		console.log("Añadido");
+	}
+	else{
+		console.log("Product Wrapper no encontrado");
+	}
+
+
+}
 
 
 //Event Handlers
@@ -161,6 +232,21 @@ function set_buy_buttons(buttons){
 	}
 
 }
+
+function set_info_buttons(info_buttons){
+	for(const boton of info_buttons){
+		boton.textContent = "¡Show more info!";
+		boton.addEventListener("click",show_info,false)
+	}
+}
+
+function set_hidden_info_buttons(hide_info_button){
+	for(const boton of hide_info_button){
+		boton.textContent = "¡Hidde info!";
+		boton.addEventListener("click",hidde_info,false)
+	}
+}
+
 
 
 

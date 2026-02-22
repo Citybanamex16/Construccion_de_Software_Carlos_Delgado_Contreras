@@ -20,6 +20,7 @@
 
 
   <!-- FrontlineBlock -->
+<div class="game_wrapper" data-game-id = "p01">
   <div class="column is-half-desktop is-offset-one-quarter-desktop"> 
     
     <div class="box is-flex is-flex-direction-column is-align-items-center">
@@ -47,12 +48,26 @@
         <div class = "button_container">
         	<a href="https://citybanamex16.itch.io/frontline" class="button" target="_blank">Try It!</a>
         	<button id="frontline" class="button buybutton"  data-game-id="p01">No Info</button>
+
+          <button class="button infobutton" data-game-id="p01">Show more Info</button>
         </div>
 
       </article>
     </div>
 
   </div>
+
+    <!-- FrontlineBlock: Hidden info -->
+    <div class="column is-hidden game_info" data-game-id = "p01">
+      <section class="box is-flex is-flex-direction-column is-align-items-center">
+        <h2 class=" title is-4">More Info </h2>
+        <button class="button hideinfo " data-game-id="p01"> Hidde Info</button>
+        <p> Frontline is a 2D Tower-Defend game based in the 2nd world war</p>
+      </section>
+    </div>
+</div>
+
+
 
 
  <!-- A Memory of Masks -->
