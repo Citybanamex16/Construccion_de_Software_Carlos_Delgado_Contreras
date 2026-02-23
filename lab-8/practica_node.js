@@ -19,8 +19,8 @@ console.log(num + " + " + num2 + " = " + result);
 
 console.log("hola desde node");
 
-const filesystem = require('fs');
-filesystem.writeFileSync('hola.txt','Hola desde Node');
+import filesystem from 'fs';
+
 
 
 
@@ -32,10 +32,49 @@ for (let item of arreglo){
 }
 
 
+//funciones 
+
+
+function write_file(text){
+  filesystem.writeFileSync('hola.txt','text');
+
+}
+
+
+function get_avarage(array){
+  let total = 0;
+  for (var i = array.length - 1; i >= 0; i--) {
+    total += array[i];
+  }
+  const avarage = (total/array.length);
+  console.log(`Promedio de array es ${avarage}`)
+}
+
+
+function fibonacci(digito){
+  if (digito <= 1){
+
+    return digito;
+  }
+  
+  let a = 0;
+  let b = 1;
+  let temp = 0;
+  for (let i = 2; i <= digito; i++) {
+    temp = a + b;
+    a = b;
+    b = temp;
+  }
+  return b;
+}
+
+get_avarage(arreglo);
+console.log(`Fibonacci: ${fibonacci(9)}`);
+write_file("Hola, esto fue escrito desde node");
 
 
 //Creación de un servidor
-const http = require('http');
+import http from 'http';
 const html =  `<!DOCTYPE html>
 <htm langl = "es">
 <head>
