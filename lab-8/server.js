@@ -38,6 +38,69 @@ const server = http.createServer((request,response) => {
         });
     }
 
+    //Caso 2: Mis CSS
+    else if(urlRequested === '/src/style.css'){
+            //Queremos rescatar nuestro HTML en los archivos
+            fs.readFile('./src/style.css',(err,data) => {
+                if(err){
+                    response.writeHead(500, {'Content-Type': 'text/plain'});
+                    //End es el que manda la información.
+                    response.end("Error en el servidor: No encontré el archivo");
+                }
+                else{
+                    response.writeHead(200,{'Content-Type':'text/css'});
+                    response.end(data);
+                    //Aqui va nuestro archivo :)
+                }
+
+
+            });
+        }
+
+
+    //Caso 3: Bulma 
+    else if(urlRequested === '/src/bulma.min.css'){
+            //Queremos rescatar nuestro HTML en los archivos
+            fs.readFile('./src/bulma.min.css',(err,data) => {
+                if(err){
+                    response.writeHead(500, {'Content-Type': 'text/plain'});
+                    //End es el que manda la información.
+                    response.end("Error en el servidor: No encontré el archivo");
+                }
+                else{
+                    response.writeHead(200,{'Content-Type':'text/css'});
+                    response.end(data);
+                    //Aqui va nuestro archivo :)
+                }
+
+
+            });
+        }
+
+
+    //Caso 4: Java Script 
+    else if(urlRequested === '/src/main.js'){
+            //Queremos rescatar nuestro HTML en los archivos
+            fs.readFile('./src/main.js',(err,data) => {
+                if(err){
+                    response.writeHead(500, {'Content-Type': 'text/plain'});
+                    //End es el que manda la información.
+                    response.end("Error en el servidor: No encontré el archivo");
+                }
+                else{
+                    response.writeHead(200,{'Content-Type':'text/javascript'});
+                    response.end(data);
+                    //Aqui va nuestro archivo :)
+                }
+
+
+            });
+        }
+
+
+
+
+
     //Ultimo Caso: Algo que no existe
     else{
         response.writeHead(404);
