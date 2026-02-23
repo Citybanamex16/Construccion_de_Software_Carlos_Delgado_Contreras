@@ -26,7 +26,12 @@
     <div class="box is-flex is-flex-direction-column is-align-items-center">
       
       <article class="ficha_juego has-text-centered">
-        <h2 class="title is-4">Frontline</h2>
+
+        <section class="columns">
+          <h2 class="title is-5 column">Frontline</h2>
+          <h3 class="price column " data-game-id = "p01">¿¿Price??</h3>
+        </section>
+        
         
         <figure class="image mb-4">
           <img src="images/FrontLine.png" alt="Main Screen of Frontline">
@@ -76,7 +81,11 @@
     <div class="box is-flex is-flex-direction-column is-align-items-center">
       
       <article class="ficha_juego has-text-centered">
-        <h2 class="title is-4">A Memory of Masks</h2>
+
+        <section class="columns">
+          <h2 class="title is-5 column">A Memory of Masks</h2>
+          <h3 class="price column " data-game-id = "p02">¿¿Price??</h3>
+        </section>
         
         <figure class="image mb-4">
           <img src="images/Mask.png" alt="Main logo">
@@ -106,11 +115,51 @@
   </div>
 
 
+  <!-- Amaterasu -->
+  <div class="column is-half-desktop is-offset-one-quarter-desktop"> 
+    
+    <div class="box is-flex is-flex-direction-column is-align-items-center">
+      
+      <article class="ficha_juego has-text-centered">
+        <section class="columns">
+          <h2 class="title is-5 column">Proyect Amaterasu</h2>
+          <h3 class="price column " data-game-id = "p03">¿¿Price??</h3>
+        </section>
+        
+        <figure class="image mb-4">
+          <img src="images/Coming.jpg" alt="Coming Soon">
+        </figure>
+        
+        <div class="content">
+          <ol class="is-upper-roman"> 
+            <li><strong>Genre:</strong> Roguelike game</li>
+            <li><strong>Platform:</strong> PC</li>
+            <li><strong>Game Mode:</strong> Single Player</li>
+            <li><strong>Theme:</strong> action, roguelike, shooter</li>
+          </ol>
+        </div>
+
+        <div class="box">
+          <input type="number" id="cantidad_amaterasu" class="cantidad" value="1" min="1" max="10" step="1" data-game-id="p03">
+        </div>
+          
+        <div class = "button_container">
+          <a href="" class="button" target="_blank">¡Coming Soon!</a>
+          <button id="amaterasu" class="button buybutton"  data-game-id="p03">No Info</button>
+        </div>
+
+      </article>
+    </div>
+
+  </div>
+
+
+
 </section>
 
 
  <!-- detalles de compra -->
-<section class="columns">
+<section class="columns" id="cart">
   <div class="column">
     <div class="box">
         <article class="detalles_compra">

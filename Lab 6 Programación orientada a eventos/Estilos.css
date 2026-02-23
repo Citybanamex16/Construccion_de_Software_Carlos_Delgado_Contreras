@@ -81,6 +81,29 @@
 }
 
 
+.price {
+  /* Color del texto principal (blanco o muy claro) */
+  color: #fff;
+  font-family: Arial, sans-serif; /* O una fuente más estilizada */
+  font-size: 2rem;
+  
+  /* Fondo oscuro recomendado para resaltar el neón */
+  background-color: #121212;
+  padding: 10px;
+  border-radius: 5px;
+  
+  /* Efecto Neón - Capas de sombras */
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #0fa,  /* Color principal neón 1 */
+    0 0 40px #0fa,  /* Intensidad exterior 1 */
+    0 0 80px #0fa,  /* Intensidad exterior 2 */
+    0 0 90px #0fa,
+    0 0 100px #0fa,
+    0 0 150px #0fa;
+}
+
 
 
 

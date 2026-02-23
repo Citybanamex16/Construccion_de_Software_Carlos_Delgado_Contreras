@@ -55,14 +55,16 @@ class product{
 
 const game_frontline = new product("Frontline",500);
 const game_mask = new product ("A Memory of Masks", 750);
+const game_amaterasu = new product ("Proyect Amaterasu", 1000);
 
 const micarrito = new carrito();
 
 
 //Diccionario de catalogo -> {id:producto} puente elemento == objeto
 const catalogo_juegos = {
-	"frontline":game_frontline,
-	"mask":game_mask
+	"p01":game_frontline,
+	"p02":game_mask,
+	"p03":game_amaterasu
 };
 
 
@@ -88,6 +90,28 @@ set_hidden_info_buttons(hide_info_buttons);
 //Ouput de total a pagar 
 const total_a_pagar = document.getElementById("Total_pagar");
 total_a_pagar.textContent = "Total en carrito: $0.00"
+
+//Setup de precios dinamicos
+
+const price_holders = document.getElementsByClassName("price");
+setup_prices(price_holders);
+
+function setup_prices(holders){
+	for(const holder of holders){
+		const game = catalogo_juegos[holder.dataset.gameId];
+		holder.textContent = `$${game.get_price()}`;
+	}
+
+}
+	
+//Setup carriot 
+const cart = document.getElementById('cart');
+
+cart.style.position = 'fixed';
+cart.style.bottom = '20px'; // Pegado abajo
+cart.style.right = '20px';  // Pegado a la derecha
+cart.style.width = '300px'; // Al usar fixed, suele perder su ancho automático
+cart.style.zIndex = '1000';
 
 
 
@@ -164,7 +188,7 @@ function hidde_info(event){
 function on_buy_button_pressed(event){
 	//Al carrito de compras le agregamos el producto vinculado al boton de compra
 	//Primero: obtenems el ID de boton que se presionó
-	const id = event.currentTarget.id; //id unico del buy button
+	const id = event.currentTarget.dataset.gameId; //id unico del buy button
 	const gameID = event.currentTarget.dataset.gameId;
 
 
@@ -197,7 +221,7 @@ function on_buy_button_pressed(event){
 		micarrito.add_producto(product_name,new_quantity,product_price);
 		update_total();
 
-		alert(`Agregado al carrito: ${new_quantity} ${product_name} por ${product_price} con ${IVA} de IVA`);
+		alert(`Agregado al carrito: ${new_quantity} ${product_name} por ${product_price*new_quantity+(IVA*product_price)} con ${IVA} de IVA`);
 		const aviso = document.getElementById("confirmacion");
 		aviso.textContent = `¡${product_name} añadido con exito!`
 		setTimeout(
