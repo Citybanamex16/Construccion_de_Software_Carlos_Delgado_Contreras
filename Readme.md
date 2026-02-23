@@ -142,7 +142,7 @@ Mensaje: "Lab 5 FrameWorks Finalizado"
 
 
 
-
+---
 <details>
 <summary><strong>Lab 6: Programación orientada a eventos></summary>
 
@@ -177,7 +177,7 @@ Mensaje: "Lab 6 FINALIZADO y mejorado"
 
 
 
-
+---
 <details>
 <summary><strong>Lab 8: Introduction al backend></summary>
 
@@ -207,6 +207,8 @@ Mensaje: "Lab 8 finalizado"
 ---
 
 ### 📝 Notas relevantes
+Quise ir un paso mas allá y que mi página cargue completa usando un diccionario de MIME TYPES) pero me estuve peleando para que reconociera el JS y no lo logre ;(
+Solo carga mis CSS con los HTMLs. Trataré de hacerlo con ifs encadenados y de ahí partire para hacerlo por MIME TYPEs :)
 </details>
 
 
