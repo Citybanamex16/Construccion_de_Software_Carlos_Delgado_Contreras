@@ -16,27 +16,24 @@ console.log(num + " + " + num2 + " = " + result);
 
 //Meter en un nuevo archivo de .tx
 
-
-console.log("hola desde node");
-
-const filesystem = require('fs');
-filesystem.writeFileSync('hola.txt','Hola desde Node');
-
-
-
-const arreglo = [10,60,90,100,10];
-console.log("Terminado");
-
-for (let item of arreglo){
-	setTimeout(() => { console.log(item);},item);
-}
-
-
-
-
 //Creación de un servidor
 const http = require('http');
-const html =  `<!DOCTYPE html>
+
+
+const html_head = `<!DOCTYPE html>
+<htm langl = "es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carlos Delgado Contrera's Lab Answers</title>
+</head>
+<body>`
+
+const html_footer =`</body>
+</html>`
+
+
+const html_index =  `<!DOCTYPE html>
 <htm langl = "es">
 <head>
 	<meta charset="utf-8">
@@ -270,9 +267,23 @@ const html =  `<!DOCTYPE html>
 const server = http.createServer((request,response) => {
 	//console.log(request);
 	console.log(request.url);
-	//console.log(response);
-	response.setHeader('Content-Type','text/html');
-	response.write(html);
+  if(request.url === '/'){
+    //console.log(response);
+  response.setHeader('Content-Type','text/html');
+  response.write();
+  }
+  else if(request.url === "/new"){
+    console.log("Ruta new ");
+     response.setHeader('Content-Type','text/html');
+    response.write();
+
+  }
+  else{
+    console.log("Temporalmente 404");
+     response.setHeader('Content-Type','text/html');
+     response.write("Error 404");
+  }
+	
 
 
 
@@ -282,6 +293,7 @@ const server = http.createServer((request,response) => {
 
 
 server.listen(3000);
+console.log("Servidor encendido en http://localhost:3000");
 
 
 

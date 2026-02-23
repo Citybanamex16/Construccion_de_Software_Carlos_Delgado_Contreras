@@ -11,6 +11,52 @@ const MIME_TYPE = {
 	".jpg":"image/jpeg"
 };
 
+
+
+const server = http.createServer((request,response) => {
+
+    const urlRequested = request.url
+
+    console.log(`¡Client requests!: ${urlRequested}`)
+
+    //Caso 1: Pagina principal
+    if(urlRequested === '/'){
+        //Queremos rescatar nuestro HTML en los archivos
+        fs.readFile('./index.html',(err,data) => {
+            if(err){
+                response.writeHead(500, {'Content-Type': 'text/plain'});
+                //End es el que manda la información.
+                response.end("Error en el servidor: No encontré el archivo");
+            }
+            else{
+                response.writeHead(200,{'Content-Type':'text/html'});
+                response.end(data);
+                //Aqui va nuestro archivo :)
+            }
+
+
+        });
+    }
+
+    //Ultimo Caso: Algo que no existe
+    else{
+        response.writeHead(404);
+        response.end("404: Nivel no encontrado");
+    }
+
+
+});
+
+
+server.listen(3000, () => {
+    console.log("Servidor encendido en http://localhost:3000");
+});
+
+
+
+
+
+/**
 const server = http.createServer((request, response) => { 
     
     let requestUrl = "";
@@ -66,6 +112,5 @@ const server = http.createServer((request, response) => {
    
 }); // Aquí cerramos el createServer
 
-server.listen(3000, () => {
-    console.log("Servidor encendido en http://localhost:3000");
-});
+
+*/
