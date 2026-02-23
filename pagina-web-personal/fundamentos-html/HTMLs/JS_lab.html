@@ -7,6 +7,63 @@
 </head>
 <body>
 	<h1>Lab de JS</h1>
+
+	<article>
+	<h2> Pregunta 1 </h2>
+	<h3> ¿Qué diferencias y semejanzas hay entre Java y JavaScript? </h3>
+	<p> Respuesta: Java es un lenguaje compilado, estatico y mayormente orientado a objetos. Este lenguaje esta mas dirigido en Backend como por ejemplo sistemas y apps empresariales. Por otro lado JavaScript al ser dinámico e interpretado esta mas dirigido a la Programación orientada a Eventos (POE). Es por esto que es muy utilizado en el desarrollo Web. Aunque diferentes ambos comparten similitud al poder soportar el paradigma de orientado a objetos (Como se uso en esta actividad) y heredan una estructura sintactica muy parecida a C & C++.  </p>
+	</article>
+
+
+	<article>
+		<h2> Pregunta 2 </h2>
+	<h3> ¿Qué métodos tiene el objeto Date? (Menciona al menos 5*)? </h3>
+	<p> Respuesta: Este objeto es una funcionalidad integrada de JS que representa un momento fijo en el tiempo sin importar la zona horaria. entre sus metodos se encuentras los siguentes </p>
+	<ol>
+		<li>New Date(): Crea la fecha y hora actual</li>
+		<li> getMonth(): Obtiene el mes de 0 a 11</li>
+		<li> getDate(): obtiene el días del mes de 1 a 31</li>
+		<li> getTime(): Devuelve el tiempo en milisegundos </li>
+		<li> getTime(): Devuelve el tiempo en milisegundos</li>
+
+	</article>
+
+
+	<article>
+		<h2> Pregunta 3 </h2>
+	<h3> ¿Qué métodos tienen los arreglos? (Menciona al menos 5*) </h3>
+	<p> Respuesta: Este objeto es una funcionalidad integrada de JS que representa un momento fijo en el tiempo sin importar la zona horaria. entre sus metodos se encuentras los siguentes </p>
+	<ol>
+		<li>push(): Añade un elemento al final del Array</li>
+		<li> pop(): Elimina el ultimo elemento del Array & lo devuelve</li>
+		<li> shift(): Como pop pero con el primer elemento del Array</li>
+		<li> unshift(): agrega uno o mas elementos al inicio del Array </li>
+		<li> filter(): Crea un nuevo arreglo con todos los elementos que cumplan una condición.</li>
+		<li>map():Crea un nuevo arreglo con los resultados de la llamada a una función aplicada a cada elemento.</li>
+
+	</article>
+
+	<article>
+		<h2>Pregunta 4</h2>
+		<h3>¿Cómo se declara una variable con alcance local dentro de una función?</h3>
+		<p> Una variable local tiene alcance solo localmente en una función si es declarada dentro del cuerpo de la función. Si intentas llamarla fuera de la función producirá un error.  </p>
+	</article>
+
+
+	<article>
+		<h2>Pregunta 5</h2>
+		<h3> ¿Qué implicaciones tiene utilizar variables globales dentro de funciones?</h3>
+		<p> El primer riesgo al usar variables globales en funciones es que dichas variables pueden ser modificadas por cualquier función, operación, otra variable o incluso el usuario. Lo cual pone en riesgo la integridad de la función (cambiar el tipo de dato sería fatal). Depurar la variable se vuelve una tarea ardua pues cualquier linea de codigo pudo ser la responsable del cambio inesperado </p>
+	</article>
+
+
+	<article>
+		<h2>Problema Resuelto con JS: Minijuego</h2>
+		<p>Para probar mis conocimientos en JS decidí programar un pequeño juego web llamado Math Heroes. En este juego el jugador debe de responder preguntas matematicas de manera rapida y correcta para poder subir de nivel a su heroe. En este minijuego utilize clases con atributos protegidos (#) para poder modelar al Heroe del jugador. Al tener un limite de tiempo para responder el problema, utilice temporizadores de tipo performance.now() para poder obtener el tiempo del input. Programe funciones que generan preguntas al azar al jugador acerca de multiplicaciones y divisiones. Aprovechando la poderosa cualidad de JS para poder guardar funciones en variables, el jugador puede recibir preguntas de multiplicaciones o de divisiones completamente al azar.  </p>
+	</article>
+	
+
+
 	<script src="../JS/script_lab.js"></script>
 
 </body>

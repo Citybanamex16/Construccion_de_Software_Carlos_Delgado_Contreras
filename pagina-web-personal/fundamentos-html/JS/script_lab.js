@@ -122,11 +122,174 @@ inverso(Number(numero_a_invertir));
 
 
 
-//Mini juego: entrena a tu heroe
+//Mini juego: entrena a tu heroe con matemáticas
 
-class heroe
+//Objetos
+class Hero{
+	//Constructor
+	//Siempre usamos el simbolo de protected(#) para que no se pueda acceder a un attr si no es por medio de metodos
+	#level;
+	constructor(new_name,new_gender){
+		this.name = new_name;
+		this.gender = new_gender;
+		this.#level = 0;
+	}
+
+	level_up(){
+		this.#level += 1;
+
+	}
+
+	get_stats(){
+		return `${this.name} tus stats son las siguientes -> nivel: ${this.#level}`;
+	}
+
+	get_name(){
+		return this.name;
+	}
+
+	get_level(){
+		return this.#level;
+	}
 
 
+}
+
+
+
+
+const option = Number(prompt("¿Quieres jugar a Math Heroes? 1 = si, 0 = no"));
+
+
+if(option === 1){
+	//Inicio de juego
+	const input_nombre = prompt("¿Qué nombre le pondras a tu heroe ?");
+	const input_gender = prompt(`¿Que genero es ${input_nombre}?`);
+	const myhero = new Hero(input_nombre,input_gender);
+	const tiempo_limite = 2.5;
+
+	const funciones_problemas = [random_multiplication,random_division];
+
+	while(true){
+
+		const action = Number(prompt("¿Que quieres hacer? 0 = salir, 1 = entrenar, 2 = ver stats"))
+		
+		if(action === 0){
+			//Salir 
+			break;
+
+		}
+		else if(action === 1){
+			//entrenar
+			let random_problem = funciones_problemas[Math.floor(Math.random() * funciones_problemas.length)]; //lo facil que era tener una funcion pick_random
+			random_problem(myhero,tiempo_limite);
+			continue;
+		}
+
+		else if(action === 2){
+			// mostrar stats
+			alert(myhero.get_stats());
+			continue;
+		}
+		else{
+			alert("Accion no valida intentalo de nuevo");
+			continue;
+		}
+
+
+	}
+	alert("¡Gracias por jugar!")
+	escribir_status_jugador(myhero.get_name(),myhero.get_level())
+
+}
+else{
+	alert("Omitiendo juego");
+	
+}
+
+function escribir_status_jugador(nombre,nivel){
+	document.write(`<article>
+		<h1> Datos Fin de partida </h1>
+		<ol>
+			<li> Nombre: ${nombre} </li>
+			<li> Nivel: ${nivel} </li>
+		</ol>
+		</article>
+
+`)
+
+
+}
+
+
+//Funciones de minijuego
+
+function random_multiplication(player,tiempo_limite){
+	alert(`¡Tienes ${tiempo_limite}s para responder el problema!`)
+	//1. dar numeros random y calcular su producto
+	const factor_1 = Math.floor(Math.random() * 10);
+	const factor_2 = Math.floor(Math.random() * 10);
+	const product = factor_1 * factor_2;
+
+	const timer1 = performance.now()
+	const player_result = Number(prompt(`¿Cual es el resultado de la multipliación ${factor_1} * ${factor_2} = ?`))
+	const timer2 = performance.now()
+
+	const time_passed = (timer2 - timer1)/1000;
+
+	if(validar_respuesta(player_result,product,time_passed,tiempo_limite)){
+		player.level_up();
+	}
+	else{
+		return;
+	}
+
+
+}
+
+
+function random_division(player,tiempo_limite){
+	alert(`¡Tienes ${tiempo_limite}s para responder el problema! -> redondea siempre hacia arriba`)
+	//1. dar numeros random y calcular su cociente
+	const divisor_1 = Math.floor(Math.random() * 10);
+	const divisor_2 = Math.floor(Math.random() * 9) + 1;
+	const cociente =  Math.ceil(divisor_1/divisor_2);
+
+	const timer1 = performance.now()
+	const player_result = Number(prompt(`¿Cual es el resultado de la divisón ${divisor_1} / ${divisor_2} = ?`))
+	const timer2 = performance.now()
+
+	const time_passed = (timer2 - timer1)/1000;
+
+	if(validar_respuesta(player_result,cociente,time_passed,tiempo_limite)){
+		player.level_up();
+	}
+	else{
+		return;
+	}
+
+}
+
+
+
+function validar_respuesta(resultado_jugador,resultado_correcto,total_time,tiempo_limite){
+
+	if(total_time < tiempo_limite){ 
+		if(resultado_jugador === resultado_correcto){
+		alert("¡Respuesta correcta!")
+		return true;
+	}
+	else{
+		alert(`¡Incorrecto! El resultado era ${resultado_correcto}`);
+		return false;
+		}
+	}
+	else{
+		alert(`¡Tiempo excedido, tardaste ${total_time} en responder el problema`)
+	}
+
+	
+}
 
 
 
