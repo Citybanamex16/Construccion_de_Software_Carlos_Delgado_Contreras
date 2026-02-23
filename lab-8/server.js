@@ -5,9 +5,10 @@ import path from 'path'; //Para leer MIMES correctos
 const MIME_TYPE = {
 	".html":"text/html",
 	".js":"text/javascript",
-	".css":"text/CSS",
+    ".mjs": "text/javascript", //auxiliar por si las dudas, lo vi en internet
+	".css":"text/css",
 	".png":"image/png",
-	".jpg":"image/jpg"
+	".jpg":"image/jpeg"
 };
 
 const server = http.createServer((request, response) => { 
@@ -25,33 +26,39 @@ const server = http.createServer((request, response) => {
     }
 
 
-    let rutaArchivo = path.join(import.meta.dirname, requestUrl);
-    console.log(rutaArchivo);
+    let rutaArchivo = path.join(process.cwd(), requestUrl);
     //Importante __dirname: devuelve la ruta absoluta del directorio que contiene el archivo JavaScript actual.
 
     //extraemos la extensión del archivo -> de aqui obtenemos la llave del diccionario
-    let extension = path.extname(rutaArchivo);
+    let extension = path.extname(rutaArchivo).toLowerCase();
+    //Minusculas porque CHROME ES SUPER ESTRICTO
+
 
     let contentType = MIME_TYPE[extension] || 'application/octet-stream';
 
-        fs.readFile('./index.html', (err, data) => {
+    //Debug temporal -> deberia de dejar a main.js en paz ;(
+    if (request.url.includes("main.js")) {
+        contentType = "text/javascript";
+    }
+
+        fs.readFile(rutaArchivo, (err, data) => {
             if (err){
             	//Caso 1: archivo no encontrado o inexistente
             	if(err.code === 'ENOENT'){
-            		res.writeHead(404);
-                	res.end('<h1>404: Recurso no encontrado</h1>');
+            		response.writeHead(404);
+                	response.end('<h1>404: Recurso no encontrado</h1>');
             	}
             	else{
             	//Error de servidor
-            	res.writeHead(500);
-                res.end(`Error de servidor: ${err.code}`);
+            	response.writeHead(500);
+                response.end(`Error de servidor: ${err.code}`);
 
             	}
             	
 
             } 
             else {
-                response.writeHead(200, {'Content-Type': contentType});
+                console.log(`Enviando: ${rutaArchivo} | MIME: ${contentType}`);
                 response.end(data);
             }
         });
