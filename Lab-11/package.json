@@ -20,9 +20,9 @@
   "license": "ISC",
   "author": "Carlos Delgado Contreras",
   "type": "commonjs",
-  "main": "main.js",
+  "main": "server.js",
   "scripts": {
-    "launch": "node --watch main.js",
+    "launch": "node --watch server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
