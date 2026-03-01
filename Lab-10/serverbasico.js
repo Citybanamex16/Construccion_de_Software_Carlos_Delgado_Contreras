@@ -4,6 +4,14 @@ const fs = require('fs');
 const querystring = require('node:querystring'); //Nativa de Node a diferencia de BodyParser
 
 
+//funciones a utilizar 
+
+function write_file(text){
+  fs.writeFileSync("Cliente",text);
+
+}
+
+
 const server = http.createServer((request,response) => {
 	//Atendemos peticiones de Cliente de manera 
 	// lineal con Ifs anidados
@@ -171,8 +179,9 @@ const server = http.createServer((request,response) => {
 		const datos = querystring.parse(body);
 		
 
-		console.log("Datos recibidos:", datos.nombre_usuario);
+		console.log("Datos recibidos en archivo .txt:", datos.nombre_usuario);
 
+		write_file(datos.nombre_usuario + " " + datos.comentario);
 
 		//paso 3: responder
         response.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
