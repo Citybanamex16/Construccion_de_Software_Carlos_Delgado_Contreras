@@ -33,13 +33,40 @@
 }/** Referencia: https://css-tricks.com/how-to-create-neon-text-with-css/#:~:text=.neonText%20%7B%20animation:%20flicker%201.5,font%2Dweight:%20400;%20%7D **/
 
 
+
+.Error404_title {
+  font-size: 8rem; /* Tamaño extra grande para impacto */
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  
+  /* Efecto neón en tonos rojos/magenta para advertencia */
+  text-shadow: 
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #f05,
+    0 0 82px #f05,
+    0 0 92px #f05,
+    0 0 102px #f05,
+    0 0 151px #f05;
+    
+  /* Animación de parpadeo de fallo técnico */
+  animation: flicker 2s infinite alternate;
+}
+
+
+
+
 .game_wrapper{
     overflow: hidden;
     width: 100%;
     max-width: 800px; /* Ajusta según tu diseño */
     margin: 0 auto;
 }
-}
+
 
 /** Usado en las descripcione */
 .is-hidden{
@@ -79,7 +106,6 @@
     }
 
 }
-
 
 
 

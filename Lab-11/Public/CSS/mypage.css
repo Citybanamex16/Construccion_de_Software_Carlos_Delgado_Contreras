@@ -1,0 +1,93 @@
+
+body {
+	font-family: "Inconsolada", "Courier", monospace;
+}
+
+.Ficha_juego{
+
+
+	/** Estilo de Article */
+	border: 6px solid gray;
+	box-shadow: 10px 20px 15px #888888;
+	padding: 20px;
+	margin: 40px;
+
+}
+
+
+
+
+.Tech_list ul {
+	/** Listas de la ficha de juego **/
+	 display: inline-block;
+	 text-align: left;
+	 list-style-position: outside ;
+
+}
+
+
+h1{
+	/** Titulos de Secciones*/
+	color: brown;
+	font-size: 50px;
+	text-shadow: 1px 1px 1px black;
+
+}
+
+
+#Amaterasu{
+	background-color: black;
+	text-shadow: 0px 0px 12px gold
+}
+
+
+.Link_Juego {
+  display: inline-block;
+  padding: 10px 20px;
+  
+  transition: all 0.3s ease; 
+}
+
+
+
+
+.Link_Juego:hover{
+	color: orange;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+.Boton_enlace{
+	display: inline-block;
+	padding: : 24px;
+	background-color: blueviolet;
+	color: white;
+	text-decoration: none;
+	border-radius: 8px;
+	font-weight: bold;
+	transition: all 0.3s ease;
+	box-shadows: 0px 4px 6px rgba(0,0,0.1);
+}
+
+.Boton_enlace:hover{
+	background-color: #3700b3; 
+  transform: translateY(-3px); 
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2); 
+}
+
+.Boton_enlace:active{
+	transform: translateY(0px);
+}
+
+
+
+/** Bulma */
+
+
+
+
+
+
+
