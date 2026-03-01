@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ejemplo de Bulma</title>
+    <!-- Enlace al CDN de Bulma (archivo web) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+</head>
+<body>
+    <section class="section">
+        <div class="container">
+            <h1 class="title">Hola, Bulma!</h1>
+            <p class="subtitle">Estilos cargados desde el <strong>CDN</strong>.</p>
+            
+        </div>
+    </section>
+
+    <section class="box">
+
+    	<form action="/enviar-forms" method="Post">
+
+    		<!-- Navegador solo manda lo que tenga NAME -->
+    		
+		    	<div class="field">
+				  <label class="label">Name</label>
+				  <div class="control">
+				    <input name="nombre_usuario" class="input" type="text" placeholder="e.g Alex Smith">
+				  </div>
+				</div>
+
+			<textarea
+			  name = "comentario"
+			  class="textarea is-link"
+			  placeholder="Link textarea"
+			  type = "text"
+			></textarea>
+
+			<button type="submit" class="button is-primary">Botón Primario</button>
+
+    	</form>
+
+		
+
+		
+    </section>
+
+</body>
+</html>

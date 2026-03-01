@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Charly_dev_shop</title>
+  <link rel="stylesheet" href="/CSS/bulma.min.css">
+  <link rel="stylesheet" href = "/CSS/style.css">
+
+</head>
+<body>
+  <div class="box">
+    <h1 class="Neon_title has-text-centered" > ¡Welcome to Charly's Dev Shop! </h1>
+  </div>
+  
+
+
+  <!-- Sección Juegos -->
+<section class="columns is-multiline">
+
+
+  <!-- FrontlineBlock -->
+<div class="game_wrapper" data-game-id = "p01">
+  <div class="column is-half-desktop is-offset-one-quarter-desktop"> 
+    
+    <div class="box is-flex is-flex-direction-column is-align-items-center">
+      
+      <article class="ficha_juego has-text-centered">
+        <h2 class="title is-4">Frontline</h2>
+        
+        <figure class="image mb-4">
+          <img src="Assets/FrontLine.png" alt="Main Screen of Frontline">
+        </figure>
+        
+        <div class="content">
+          <ol class="is-upper-roman"> 
+            <li><strong>Genre:</strong> 2D Tower Defense</li>
+            <li><strong>Platform:</strong> PC</li>
+            <li><strong>Game Mode:</strong> Single Player</li>
+            <li><strong>Theme:</strong> War game, defend the base, reaction game</li>
+          </ol>
+        </div>
+
+        <div class="box">
+          <input type="number" id="cantidad_frontline" class="cantidad" value="1" min="1" max="10" step="1" data-game-id="p01">
+        </div>
+          
+        <div class = "button_container">
+          <a href="https://citybanamex16.itch.io/frontline" class="button" target="_blank">Try It!</a>
+          <button id="frontline" class="button buybutton"  data-game-id="p01">No Info</button>
+
+          <button class="button infobutton" data-game-id="p01">Show more Info</button>
+        </div>
+
+      </article>
+    </div>
+
+  </div>
+
+    <!-- FrontlineBlock: Hidden info -->
+    <div class="column is-hidden game_info" data-game-id = "p01">
+      <section class="box is-flex is-flex-direction-column is-align-items-center">
+        <h2 class=" title is-4">More Info </h2>
+        <button class="button hideinfo " data-game-id="p01"> Hidde Info</button>
+        <p> Frontline is a 2D Tower-Defend game based in the 2nd world war</p>
+      </section>
+    </div>
+</div>
+
+
+
+
+ <!-- A Memory of Masks -->
+  <div class="column is-half-desktop is-offset-one-quarter-desktop"> 
+    
+    <div class="box is-flex is-flex-direction-column is-align-items-center">
+      
+      <article class="ficha_juego has-text-centered">
+        <h2 class="title is-4">A Memory of Masks</h2>
+        
+        <figure class="image mb-4">
+          <img src="Assets/Mask.png" alt="Main logo">
+        </figure>
+        
+        <div class="content">
+          <ol class="is-upper-roman"> 
+            <li><strong>Genre:</strong> Mystery Game</li>
+            <li><strong>Platform:</strong> PC</li>
+            <li><strong>Game Mode:</strong> Single Player</li>
+            <li><strong>Theme:</strong> Murder Mystery, Narrative, Suspense, detectives</li>
+          </ol>
+        </div>
+
+        <div class="box">
+          <input type="number" id="cantidad_masks" class="cantidad" value="1" min="1" max="10" step="1" data-game-id="p02">
+        </div>
+          
+        <div class = "button_container">
+          <a href="https://outer-games-studio.itch.io/a-memory-of-masks" class="button" target="_blank">Try It!</a>
+          <button id="mask" class="button buybutton"  data-game-id="p02">No Info</button>
+        </div>
+
+      </article>
+    </div>
+
+  </div>
+
+
+</section>
+
+
+ <!-- detalles de compra -->
+<section class="columns">
+  <div class="column">
+    <div class="box">
+        <article class="detalles_compra">
+          <output id="Total_pagar">???</output>
+          <p id="confirmacion"></p>
+          
+        </article>
+      
+    </div>
+    
+
+  </div>
+
+
+</section>
+
+<section class="box columns">
+
+  <div class="column">
+    <h3>Portafolio</h3>
+    <a href="/port/main" class="Link_button button" >Portafolio Page</a>
+    <a href="/shop/forms" class="Link_button button" >Comment Section</a>
+  </div>
+
+  <div class="column">
+    <h3>Referencias, Bibliografía & preguntas</h3>
+    <a href="https://bulma.io/documentation/" class="Link_button button" target="_blank"> Bulma Documentation</a>
+    
+  </div>
+  
+</section>
+
+<script type="module" src="JS/shop_main.js"></script>
+
+</body>
+</html>
