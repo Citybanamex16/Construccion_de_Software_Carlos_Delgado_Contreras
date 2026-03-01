@@ -1,0 +1,91 @@
+.button-hover{
+  color: red;
+  font-style: italic;
+  font-family: Arial, sans-serif;
+}
+
+
+
+.Neon_title{
+  font-size: 3rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    /* Efecto neón brillante utilizando text-shadow */
+    text-shadow:
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 20px #0fa,
+        0 0 40px #0fa,
+        0 0 80px #0fa,
+        0 0 90px #0fa;
+    animation: flicker 1.5s infinite alternate; /* Animación de parpadeo */
+}
+
+/* Animación para efecto de parpadeo */
+@keyframes flicker {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 40px #0fa, 0 0 80px #0fa;
+    }
+    20%, 24%, 55% {
+        text-shadow: none; /* Apagado breve */
+    }
+}/** Referencia: https://css-tricks.com/how-to-create-neon-text-with-css/#:~:text=.neonText%20%7B%20animation:%20flicker%201.5,font%2Dweight:%20400;%20%7D **/
+
+
+.game_wrapper{
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px; /* Ajusta según tu diseño */
+    margin: 0 auto;
+}
+}
+
+/** Usado en las descripcione */
+.is-hidden{
+    opacity: 0;
+    transform: translate(20px); /** Ligeramente a la derecha*/
+
+}
+
+/** Usado en wrapper */
+.father_active{
+    transition: all 0.5s cubic-bezier(0.4,0,0.2,1);
+    .ficha_juego{
+        transform: translate(-20px);
+    }
+
+    .game_info{
+        opacity: 1;
+        transform: translate(0px);
+    }
+
+    .infobutton{
+        opacity: 0;
+        pointer-events: none;
+    }
+
+}
+
+/** Usado en wrapper */
+.father_default{
+    transition: all 0.5s cubic-bezier(0.4,0,0.2,1);
+    .ficha_juego{
+        transform: translate(0px);
+    }
+
+    .infobutton{
+        display: block;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
