@@ -5,18 +5,10 @@ const querystring = require('node:querystring'); //Nativa de Node a diferencia d
 const fs = require('fs');
 
 
-//Middlewares Ruteo
+//Middlewares Ruteo EJS
 router.get("/main",(request,response) =>{
     console.log(`Client requests: ${request.url}`)
-    const filePath = path.join(__dirname,'..','Public','Portafolio_HTMLs','portafolio.html');
-
-    //Mandamos el archivo
-
-    response.sendFile(filePath,(err) =>{
-        if(err){
-            response.status(500,'Error Interno');
-        }
-    })
+    response.render('portafolio');
 
 
 });

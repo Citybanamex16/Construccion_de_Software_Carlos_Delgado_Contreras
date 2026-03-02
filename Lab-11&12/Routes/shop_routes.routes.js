@@ -11,21 +11,15 @@ function write_file(text){
 
 }
 
-
+//Middleware de ruteo EJS
 router.get("/forms",(request,response) =>{
     console.log(`Helo from middleware for /forms -> Client requests: ${request.url}`)
     //Leemos nuestro HTML
-       const filePath = path.join(__dirname,'..','Public','Shop_HTMLs','forms.html');
-
-        //Mandamos el archivo
-        response.sendFile(filePath,(err) =>{
-            if(err){
-                response.status(500,'Error Interno');
-            }
-        })
+    response.render('forms');
 });
 
 
+//Middleware de ruteo POST
 router.post("/enviar-forms",(request,response) =>{
         console.log("¡Recibiendo respuesta de cliente!");
         //Paso 1: recibir los datos

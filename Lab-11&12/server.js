@@ -11,6 +11,10 @@ const app = express();
 //Configuración de Carpetas estaticas 
 app.use(express.static(path.join(__dirname,'Public')));
 
+//Conf de EJS
+app.set('view engine', 'ejs');
+app.set('views', 'views');
+
 
 //Routers
 const shopRoutes = require('./Routes/shop_routes.routes.js');
@@ -21,25 +25,31 @@ app.use('/shop',shopRoutes);
 app.use('/port',portRoutes);
 
 
-//Middlewares Ruteo
+//Middlewares Ruteo EJS
 app.get("/",(request,response) =>{
     console.log(`Client requests: ${request.url}`)
-    const filePath = path.join(__dirname,'Public','Shop_HTMLs','index.html');
+    //Preparamos BreadCrumbs;
+    const breadcrumbs = [
+        {name: "Portafolio", url: "/port/main"},
+        {name: "Comment Section", url: "/shop/forms"},
+        {name: "labs", url: "/port/labs"}
+    ]
 
-    //Mandamos el archivo
-    response.sendFile(filePath,(err) =>{
-        if(err){
-            response.status(500,'Error Interno');
-        }
-    })
+
+
+    //Renderizamos el archivo
+    response.render('index',{breadcrumbs});
+    
 
 
 });
 
 
+
+
 //Middleware de Error 
 app.use((request,response) =>{
-        console.log(`¡Page not found: ${request.url}`);
+        console.log(`¡Page not found!: ${request.url}`);
         const errorfile = path.join(__dirname,'Public','error404.html');
         response.status(404).sendFile(errorfile);
 })
