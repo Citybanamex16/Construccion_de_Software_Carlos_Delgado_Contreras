@@ -30,12 +30,10 @@ app.get("/",(request,response) =>{
     console.log(`Client requests: ${request.url}`)
     //Preparamos BreadCrumbs;
     const breadcrumbs = [
-        {name: "Portafolio", url: "/port/main"},
+        {name: "Charlie's Portafolio", url: "/port/main"},
         {name: "Comment Section", url: "/shop/forms"},
         {name: "labs", url: "/port/labs"}
     ]
-
-
 
     //Renderizamos el archivo
     response.render('index',{breadcrumbs});

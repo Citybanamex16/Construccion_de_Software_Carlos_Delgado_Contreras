@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
 </head>
 <body>
+	<%- include('partials/breadcrumb') %>
     <section class="section">
         <div class="container">
             <h1 class="title">Hola, Bulma!</h1>
@@ -30,7 +31,7 @@
 				</div>
 
 			<textarea
-			  name = "comentario"
+			  name = "review"
 			  class="textarea is-link"
 			  placeholder="Link textarea"
 			  type = "text"
@@ -52,6 +53,8 @@
 
 		
     </section>
+
+    <%- include('partials/comment_template')%>
 
 </body>
 </html>

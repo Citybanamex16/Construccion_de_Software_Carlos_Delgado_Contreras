@@ -4,18 +4,26 @@ const path = require('path');
 const querystring = require('node:querystring'); //Nativa de Node a diferencia de BodyParser
 const fs = require('fs');
 
-//funciones a utilizar 
 
-function write_file(text){
-  fs.writeFileSync("Cliente",text);
+//constantes y estructuras de datos.
+ const breadcrumbsForms = [
+        {name: "Shop", url: "/"},
+        {name: "Charlie's Portafolio", url: "/port/main"},
+        {name: "labs", url: "/port/labs"}
+    ]
 
-}
+const listaComentarios = [
+    { name: "Sistema", texto: "¡Sé el primero en comentar!" }
+];
+
+
 
 //Middleware de ruteo EJS
 router.get("/forms",(request,response) =>{
     console.log(`Helo from middleware for /forms -> Client requests: ${request.url}`)
     //Leemos nuestro HTML
-    response.render('forms');
+    let breadcrumbs = breadcrumbsForms;
+    response.render('forms',{breadcrumbs,listaComentarios});
 });
 
 
@@ -29,21 +37,25 @@ router.post("/enviar-forms",(request,response) =>{
         body += chunk.toString(); 
                 });
 
-
-
         //paso 2 traducirlos
         request.on('end',() =>{
 
         console.log(`Body crudo: ${body}`);
         const datos = querystring.parse(body);
+
+        //Creamos un numero comentario en la lista de comentarios
+         listaComentarios.push({
+            name: datos.nombre_usuario,
+            texto: datos.review
+        });
         
 
         console.log("Datos recibidos en archivo .txt:", datos.nombre_usuario);
 
-        write_file(datos.comentario);
 
         //paso 3: responder
-        response.send(`<h1>¡Gracias ${datos.nombre_usuario}!</h1><p>Recibimos tu mensaje.</p>`);
+        response.redirect('forms');
+
 
         });
 });

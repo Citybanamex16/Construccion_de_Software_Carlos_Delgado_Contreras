@@ -1,0 +1,16 @@
+<div class="box">
+  <h3 class="subtitle">Comentarios</h3>
+  <% listaComentarios.forEach(comentario => { %>
+    <article class="media">
+      <div class="media-content">
+        <div class="content">
+          <p>
+            <strong><%= comentario.name %></strong>
+            <br>
+            <%= comentario.texto %>
+          </p>
+        </div>
+      </div>
+    </article>
+  <% }) %>
+</div>

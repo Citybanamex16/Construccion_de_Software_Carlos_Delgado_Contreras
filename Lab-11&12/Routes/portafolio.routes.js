@@ -8,7 +8,17 @@ const fs = require('fs');
 //Middlewares Ruteo EJS
 router.get("/main",(request,response) =>{
     console.log(`Client requests: ${request.url}`)
-    response.render('portafolio');
+
+
+    const breadcrumbs = [
+        {name: "Shop", url: "/"},
+        {name: "Comment Section", url: "/shop/forms"},
+        {name: "labs", url: "/port/labs"}
+    ]
+
+
+
+    response.render('portafolio',{breadcrumbs});
 
 
 });
