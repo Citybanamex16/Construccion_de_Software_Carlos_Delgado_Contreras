@@ -1,43 +1,16 @@
+
+//Bibliotecas y modulos nativos
 const express = require('express');
 const router = express.Router();
-const path = require('path');
-const querystring = require('node:querystring'); //Nativa de Node a diferencia de BodyParser
-const fs = require('fs');
 
+
+
+//Llamado a Controllador 
+const portController = require('../Control/portafolio.controller.js');
 
 //Middlewares Ruteo EJS
-router.get("/main",(request,response) =>{
-    console.log(`Client requests: ${request.url}`)
-
-
-    const breadcrumbs = [
-        {name: "Shop", url: "/"},
-        {name: "Comment Section", url: "/shop/forms"},
-        {name: "labs", url: "/port/labs"}
-    ]
-
-
-
-    response.render('portafolio',{breadcrumbs});
-
-
-});
-
-
-router.get("/labs",(request,response) =>{
-    console.log(`Client requests: ${request.url}`)
-    const filePath = path.join(__dirname,'..','Public','Portafolio_HTMLs','Laboratorios.html');
-
-    //Mandamos el archivo
-
-    response.sendFile(filePath,(err) =>{
-        if(err){
-            response.status(500,'Error Interno');
-        }
-    })
-
-
-});
+router.get("/main",portController.getPort);
+router.get("/labs",portController.getLabs);
 
 
 

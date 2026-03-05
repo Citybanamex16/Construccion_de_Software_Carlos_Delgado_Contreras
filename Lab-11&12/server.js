@@ -14,6 +14,7 @@ app.use(express.static(path.join(__dirname,'Public')));
 //Conf de EJS
 app.set('view engine', 'ejs');
 app.set('views', 'views');
+app.use(express.urlencoded({ extended: false })); // Esto hace el parseo por ti
 
 
 //Routers
