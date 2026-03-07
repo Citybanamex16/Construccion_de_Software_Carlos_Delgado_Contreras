@@ -6,6 +6,12 @@ This Repository is used for storing and sharing the programs, files, apps and al
 
 # 📘 Bitácora de Laboratorios
 
+ACLARACIONES de preguntas de Labs: Al principio de los Labs no organice bien mis archivos de 
+Preguntas y respuestas de cada lab por lo que decidí unificarlos todos en una vista en mi pagina.
+A continuación esta el comió donde estan las preguntas de los labs en la pagina de LabsHub
+
+Labs 1-13: 3abac10 (origin/Lab-12, Lab-12) HUB de Labs creado y simplificado para calificacion REVISAR AQUI
+
 ---
 
 <details>
@@ -197,7 +203,7 @@ Mensaje: "Lab 8 carga pagina sin estilos"
 
 ### ✅ Commit final evaluable
 Hash: `10f473b`  
-Mensaje: "Lab 8 finalizado"
+Mensaje: "Lab 10 finalizado"
 
 ---
 
@@ -210,6 +216,181 @@ Mensaje: "Lab 8 finalizado"
 Quise ir un paso mas allá y que mi página cargue completa usando un diccionario de MIME TYPES) pero me estuve peleando para que reconociera el JS y no lo logre ;(
 Solo carga mis CSS con los HTMLs. Trataré de hacerlo con ifs encadenados y de ahí partire para hacerlo por MIME TYPEs :)
 </details>
+
+---
+<details>
+<summary><strong>Lab 10: Rutas & Formas></summary>
+
+### 👥 Integrantes
+- Carlos Delgado Contreras
+
+### 🎯 Objetivo del laboratorio
+Breve descripción de qué se debía lograr.
+
+---
+
+### 🏁 Commit de inicio
+Hash: `5bdd8a4`  
+Mensaje: "Lab 10: Inicio y gran avance"
+
+---
+
+### ✅ Commit final evaluable
+Hash: `7900060`  
+Mensaje: "Fin de Lab 10: Archivo de txt con res cliente"
+
+---
+
+### 🔄 Rol en Pair Programming
+- Main: Carlos Delgado Contreras
+
+---
+
+### 📝 Notas relevantes
+</details>
+
+---
+<details>
+<summary><strong>Lab 11: Express></summary>
+
+### 👥 Integrantes
+- Carlos Delgado Contreras
+
+### 🎯 Objetivo del laboratorio
+Breve descripción de qué se debía lograr.
+
+---
+
+### 🏁 Commit de inicio
+Hash: `1ef01b0`  
+Mensaje: "Inicio de Lab 11"
+
+---
+
+### ✅ Commit final evaluable
+Hash: `d187ff1`  
+Mensaje: "(origin/lab-11, lab-11) Lab 11 terminado"
+
+---
+
+### 🔄 Rol en Pair Programming
+- Main: Carlos Delgado Contreras
+
+---
+
+### 📝 Notas relevantes
+</details>
+
+
+---
+<details>
+<summary><strong>Lab 12: HTML dinámico></summary>
+
+### 👥 Integrantes
+- Carlos Delgado Contreras
+
+### 🎯 Objetivo del laboratorio
+Breve descripción de qué se debía lograr.
+
+---
+
+### 🏁 Commit de inicio
+Hash: `cd2e2b6 `  
+Mensaje: "Lab 12 inicio y breadcrumb en index dinamico"
+
+---
+
+### ✅ Commit final evaluable
+Hash: `c3e2a7b`  
+Mensaje: "Lab 12 terminado con comment section"
+
+---
+
+### 🔄 Rol en Pair Programming
+- Main: Carlos Delgado Contreras
+
+---
+
+### 📝 Notas relevantes
+</details>
+
+
+---
+<details>
+<summary><strong>Lab 13: Vista MVC></summary>
+
+### 👥 Integrantes
+- Carlos Delgado Contreras
+
+### 🎯 Objetivo del laboratorio
+Breve descripción de qué se debía lograr.
+
+---
+
+### 🏁 Commit de inicio
+Hash: `ab634ad `  
+Mensaje: "Inicio y finalizacion de Lab 13"
+
+---
+
+### ✅ Commit final evaluable
+Hash: `ab634ad `  
+Mensaje: "Inicio y finalizacion de Lab 13"
+
+---
+
+### 🔄 Rol en Pair Programming
+- Main: Carlos Delgado Contreras
+
+---
+
+### 📝 Notas relevantes
+</details>
+
+---
+<details>
+<summary><strong>Lab 14: Manejo de Sesion></summary>
+
+### 👥 Integrantes
+- Carlos Delgado Contreras
+
+### 🎯 Objetivo del laboratorio
+Breve descripción de qué se debía lograr.
+
+---
+
+###Link a Repo proyecto 
+Link: 
+
+---
+
+### 🏁 Commit de inicio
+Hash: `ab634ad `  
+Mensaje: "Inicio y finalizacion de Lab 13"
+
+---
+
+### ✅ Commit final evaluable
+Hash: `ab634ad `  
+Mensaje: "Inicio y finalizacion de Lab 13"
+
+---
+
+### 🔄 Rol en Pair Programming
+- Main: Carlos Delgado Contreras
+
+---
+
+### 📝 Notas relevantes
+En esta actividad decidi aplicarla directamente al Proyecto. Mi pagina web no cuenta con la funcionalidad de 
+Iniciar sesión ya que es mi pagina web personal de portafolio. Por lo que no le ví valor a esta función en 
+Mi proyecto personal. Es por esto que lo aplique al proyecto Final
+</details>
+
+
+
+
+
 
 
 
