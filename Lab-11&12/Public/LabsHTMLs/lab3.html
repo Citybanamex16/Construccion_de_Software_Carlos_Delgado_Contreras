@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Lab 3:CSS Q&A</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+</head>
+<body>
+
+<section>
+      <h3>Lab 3:CSS </h3>
+
+          <!-- Question Template, erase when finished-->
+      <article>
+        <h5>Question x</h5>
+        <p>Question: </p>
+        <p> Answer: </p>
+        <p> Reference:</p>
+      </article>
+
+      
+
+      <article>
+        <h2> Question 1</h2>
+        <p>Question Como ingeniero de software ¿cuál es tu recomendación sobre el uso de !important en un CSS? </p>
+        <p>Answer: En mi punto de vista es un mal habito el uso de !important en un archivo CSS. Recordamos que !Important es un comando que fuerza un estilo dentro de la jerarquía de cascada de CSS. Funciona como un "Comodín" que solapa la jerarquía natural del lenguaje. Este uso del comodín es un "Parche" de un problema mas grande: No comprender tu propia jerarquía de estilos CSS. Un parche no es una solución y habrá un momento en que ni con Comodines podras arreglar tu desastre. ¿Necesitaremos Comodines de Comodines ?</p>
+      </article>
+
+
+          <article>
+        <h5>Question 2</h5>
+        <p>Question:Si se pone una imagen de fondo en una página HTML, ¿por qué debe escogerse con cuidado? </p>
+        <p> Answer: Al poner una imagen de fondo de TODA la pagina debemos de tomar en cuenta muchos factores en juego. Primero el viewport o la combinación de Margins,padding y Borders ¡Cambia con la pantalla! Debemos de cuidar que la imagen no quede rara. Por otro lado, la resolución de la imagen debe de ser tal para que al cubrir toda la pagina no se pierda la calidad.</p>
+      </article>
+
+
+      <article>
+        <h5>Question 3</h5>
+        <p>Question: Como ingeniero de software, ¿cuál es tu recomendación al elegir las unidades de un propiedad de estilo entre %, px y pt? </p>
+        <p> Answer: Las unidades de px, % & pt pueden llegar a ser "Ambiguas" para el programador novato. Uno no sabe tener el concepto espacial de dichas unidades. La mejor solución que propongo es establecer un minimo. Un valor de px, % o pt que sea tu ancla de minimo valor. Los demas valores los vas escalando segun tu referencia minima. Ejemplo un valor medio en tamaño puede ser 2 veces uno minimo. De esta forma puedes mantener CONSISTENCIA de tamaños en tu pagina web.  </p>
+        <p> Reference:</p>
+      </article>
+
+
+      <article>
+        <h5>Question 4</h5>
+        <p>Question: ¿Por qué el uso de una versión minimizada del CSS mejora el rendimiento del sitio?</p>
+        <p> Answer: La clave esta en entender como el navegador lee nuestro archivo HTML. Para poder extraer ordener e interpretarlas de nuestro documento HTML, el navegador debe de Parsear nuestro archivo. Debe de ir linea por linea identificando caracteres y valores. Espacios en blanco -> desperdicio de parseo. Al eliminar los espacios en blanco y los comentarios, no solo estamos reduciendo el tamaño del archivo sino simplificando el proceso de parseo. </p>
+        <p> Reference: Minify CSS | Reduce file sizes for faster loading | Cloudflare. (n.d.). https://www.cloudflare.com/learning/performance/how-to-minify-css/</p>
+      </article>
+
+    </section>
+	
+
+</body>
+</html>

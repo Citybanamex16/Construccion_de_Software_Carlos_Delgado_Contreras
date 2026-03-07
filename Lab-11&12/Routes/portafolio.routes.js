@@ -10,7 +10,6 @@ const portController = require('../Control/portafolio.controller.js');
 
 //Middlewares Ruteo EJS
 router.get("/main",portController.getPort);
-router.get("/labs",portController.getLabs);
 
 
 
