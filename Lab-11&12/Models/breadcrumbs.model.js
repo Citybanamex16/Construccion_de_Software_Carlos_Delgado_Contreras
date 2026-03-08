@@ -4,12 +4,11 @@ exports.getBreadcrumbs = (page) => {
     const dictionary = {
         'forms': [
             { name: "Shop", url: "/" },
-            { name: "Labs", url: "/port/labs" },
-            { name: "Charlie's", url: "/port/main"},
+            { name: "Charlie's Portafolio", url: "/port/main"},
             {name: 'LabsHub', url: '/labsHTMLs/LabHub.html'},
             {name: 'forms', url: ''}
         ],
-        'shop': [ { name: "Charlie's", url: "/port/main"},
+        'shop': [ { name: "Charlie's Portafolio", url: "/port/main"},
                   {name: "Comment Section", url: "/shop/forms"},
                   {name: 'LabsHub', url: '/labsHTMLs/LabHub.html'},
         		  {name: 'shop', url: ''}
@@ -19,8 +18,8 @@ exports.getBreadcrumbs = (page) => {
          'port': [
         {name: "Shop", url: "/"},
         {name: "Comment Section", url: "/shop/forms"},
-        {name: "labs", url: "/port/labs"},
-        {name: 'port', url: ''}
+        {name: 'LabsHub', url: '/labsHTMLs/LabHub.html'},
+        {name: "Charlie's Portafolio", url: "/port/main"}
    		]
     };
     return dictionary[page] || [];
