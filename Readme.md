@@ -355,24 +355,25 @@ Mensaje: "Inicio y finalizacion de Lab 13"
 - Carlos Delgado Contreras
 
 ### 🎯 Objetivo del laboratorio
-Breve descripción de qué se debía lograr.
+Se aplico un modulo de inicio de sesión y Log Out en la pagina del proyecto
 
 ---
 
-###Link a Repo proyecto 
-Link: 
-
+### 🎨 Link a Repo proyecto 
+Link: https://github.com/Citybanamex16/BlackWall-Maree/tree/dev
 ---
 
 ### 🏁 Commit de inicio
-Hash: `ab634ad `  
-Mensaje: "Inicio y finalizacion de Lab 13"
+Hash: `179ba41 `  
+Mensaje: "Lab 14 sesiones aplicado a proyecto
+ffce182 (origin/dev, dev) Merge solucionado"
 
 ---
 
 ### ✅ Commit final evaluable
-Hash: `ab634ad `  
-Mensaje: "Inicio y finalizacion de Lab 13"
+Hash: `179ba41 `  
+Mensaje: "Lab 14 sesiones aplicado a proyecto
+ffce182 (origin/dev, dev) Merge solucionado"
 
 ---
 
@@ -384,7 +385,7 @@ Mensaje: "Inicio y finalizacion de Lab 13"
 ### 📝 Notas relevantes
 En esta actividad decidi aplicarla directamente al Proyecto. Mi pagina web no cuenta con la funcionalidad de 
 Iniciar sesión ya que es mi pagina web personal de portafolio. Por lo que no le ví valor a esta función en 
-Mi proyecto personal. Es por esto que lo aplique al proyecto Final
+Mi proyecto personal. Es por esto que lo aplique al proyecto Final de la crepería Maree
 </details>
 
 
