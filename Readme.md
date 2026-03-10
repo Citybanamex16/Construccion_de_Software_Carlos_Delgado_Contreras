@@ -388,6 +388,86 @@ Iniciar sesión ya que es mi pagina web personal de portafolio. Por lo que no le
 Mi proyecto personal. Es por esto que lo aplique al proyecto Final de la crepería Maree
 </details>
 
+---
+
+<details>
+<summary><strong>Lab 17: Interacción con la base de datos></summary>
+
+### 👥 Integrantes
+- Carlos Delgado Contreras
+
+### 🎯 Objetivo del laboratorio
+Se implemento un modulo de Comentarios con conexión a la BD. 
+---
+### 🏁 Commit de inicio
+Hash: `4a5dd00 `  
+Mensaje: "Avance Lab 17 subida de comentario"
+
+---
+
+### ✅ Commit final evaluable
+Hash: `34f975f `  
+Mensaje: "Actualizacion de Script SQL y Lab 17 Funcional :)
+"
+
+---
+
+### 🔄 Rol en Pair Programming
+- Main: Carlos Delgado Contreras
+
+---
+
+### 📝 Notas relevantes
+</details>
+
+---
+
+
+
+
+
+<details>
+<summary><strong>Lab 18: Autentificación></summary>
+
+### 👥 Integrantes
+- Carlos Delgado Contreras
+- Sebastian Mansilla Colts
+
+### 🎯 Objetivo del laboratorio
+Se implemento un modulo de autenticación de sesión en el Proyecto de Sebastián Mansilla. 
+
+###Link a Repo 
+Link: https://github.com/M4nsi00/TC2005B_SebastianMansillaCots
+
+---
+### 🏁 Commit de inicio
+Hash: `d95473111dc5aaeb2f208e1deb2e4d0fad7fdd0e`  
+Mensaje: "Avance lab18 con Charly"
+
+---
+
+### ✅ Commit final evaluable
+Hash: `d1058289e2724e1ab0f8e67fcf4227e576f27b17 `  
+Mensaje: "Lab 18 terminado lo hice con Carlos"
+
+---
+
+### 🔄 Rol en Pair Programming
+- Driver: Sebastian Mansilla
+- Navigator: Carlos Delgado Contreras
+
+---
+
+### 📝 Notas relevantes
+</details>
+
+---
+
+
+
+
+
+
 
 
 

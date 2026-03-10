@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost
--- Tiempo de generación: 05-03-2026 a las 16:41:26
+-- Tiempo de generación: 10-03-2026 a las 17:54:53
 -- Versión del servidor: 10.4.28-MariaDB
 -- Versión de PHP: 8.2.4
 
@@ -20,6 +20,27 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `TiendaVideojuegos`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `Comentarios`
+--
+
+CREATE TABLE `Comentarios` (
+  `username` varchar(100) NOT NULL,
+  `comment` varchar(300) NOT NULL,
+  `fecha` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `Comentarios`
+--
+
+INSERT INTO `Comentarios` (`username`, `comment`, `fecha`) VALUES
+('Carlos Delgado Contreras', 'Hola desde App', '2026-03-08'),
+('Gael Rene Gonzales', 'Hola desde los comentarios', '2026-03-10'),
+('Jhonathan Lugo', 'Basado', '2026-03-08');
 
 -- --------------------------------------------------------
 
@@ -48,6 +69,12 @@ CREATE TABLE `Videojuego` (
 --
 -- Índices para tablas volcadas
 --
+
+--
+-- Indices de la tabla `Comentarios`
+--
+ALTER TABLE `Comentarios`
+  ADD PRIMARY KEY (`username`);
 
 --
 -- Indices de la tabla `users`
