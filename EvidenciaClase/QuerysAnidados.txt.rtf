@@ -1,0 +1,97 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2639
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 /* 1.- Actrices de \'93Las brujas de Salem\'94. */\
+\
+\
+/*\
+SELECT nombre from \
+Elenco E, Actor A \
+WHERE E.nombre = A.nombre and A.sexo = 'F' and E.titulo = 'Las bujas de Salem'\
+*/\
+\
+/*\
+SELECT nombre\
+FROM elenco\
+WHERE titulo = 'Las Burjas de Salem '\
+and nombre IN (\
+SELECT nombre, \
+FROM Actor\
+WHERE sexo = 'F')\
+*/\
+\
+/* 2.- Nombres de los actores que aparecen en pel\'edculas producidas por MGM en 1995. */\
+\
+/*\
+SELECT nombre from Elenco, Pelicula\
+WHERE Elenco.titulo = Pelicula.titulo AND Pelicula.nomestudio AND Pelicula.year AND Pelicula.year  = 'MGM' AND Pelicula.year = 1995\
+\
+\
+SELECT nombre\
+FROM elenco E\
+WHERE a\'f1o = 1995 and titulo IN (SELECT titulo FROM pelicula P WHERE nomestudio = 'MGM')\
+    \
+*/\
+\
+/*\
+3.- Pel\'edculas que duran m\'e1s que \'93Lo que el viento se llev\'f3\'94 (de 1939).\
+*/\
+\
+/*\
+SELECT titulo \
+FROM Peliculas\
+WHERE duracion > (SELECT duracion FROM peliculas WHERE titulo = 'Lo que el viento se llevo' AND a\'f1o = 1939)\
+*/\
+/*\
+4.- Productores que han hecho m\'e1s pel\'edculas que George Lucas.\
+*/\
+\
+/*\
+SELECT nombre, count(idproductor) as PeliculasProducidas\
+FROM Productor, Peliculas \
+WHERE Productor.idproductor = Peliculas.idproductor\
+GROUP BY nombre\
+HAVING count(idproductor) > (SELECT COUNT(id_productor)\
+                            FROM Productor, Peliculas\
+                            WHERE Productor.idproductor = Peliculas.idproductor AND \
+                            Productor.nombre = 'George Lucas')\
+                       */\
+\
+/* 5.- Nombres de los productores de las pel\'edculas en las que ha aparecido Sharon Stone. */\
+\
+/*\
+SELECT Productor.nombre\
+FROM Productor, Pelicula\
+where Pelicula.idproductor = Productor.idproductor and t\'edtulo IN(SELECT Titulo \
+FROM Elenco\
+WHERE Elenco.nombre = 'Sharon Stone')\
+\
+SELECT PR.nombre\
+FROM productor PR\
+INNER JOIN pelicula P ON PR.idproductor = P.idproductor\
+INNER JOIN elenco E ON P.titulo = E.titulo AND P.year = E.year \
+WHERE E.nombre = 'Sharon Stone'\
+*/\
+\
+/*6.- T\'edtulo de las pel\'edculas que han sido filmadas m\'e1s de una vez */\
+\
+/*\
+SELECT titulo, count(titulo) as 'cantidad de veces filmada'\
+FROM Peliculas\
+GROUP BY titulo\
+HAVING COUNT(titulo) > 1\
+*/\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+}
