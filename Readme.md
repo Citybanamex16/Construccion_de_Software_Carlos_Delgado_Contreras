@@ -456,6 +456,7 @@ Mensaje: "Lab 18 terminado lo hice con Carlos"
 
 ### 📝 Notas relevantes
 </details>
+
 ---
 
 <details>
