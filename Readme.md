@@ -422,9 +422,41 @@ Mensaje: "Actualizacion de Script SQL y Lab 17 Funcional :)
 
 ---
 
+<details>
+<summary><strong>Lab 18: Autentificación></summary>
 
+### 👥 Integrantes
+- Carlos Delgado Contreras
+- Sebastian Mansilla Colts
 
+### 🎯 Objetivo del laboratorio
+Se implemento un modulo de autenticación de sesión en el Proyecto de Sebastián Mansilla. 
 
+###Link a Repo 
+Link: https://github.com/M4nsi00/TC2005B_SebastianMansillaCots
+
+---
+### 🏁 Commit de inicio
+Hash: `d95473111dc5aaeb2f208e1deb2e4d0fad7fdd0e`  
+Mensaje: "Avance lab18 con Charly"
+
+---
+
+### ✅ Commit final evaluable
+Hash: `d1058289e2724e1ab0f8e67fcf4227e576f27b17 `  
+Mensaje: "Lab 18 terminado lo hice con Carlos"
+
+---
+
+### 🔄 Rol en Pair Programming
+- Driver: Sebastian Mansilla
+- Navigator: Carlos Delgado Contreras
+
+---
+
+### 📝 Notas relevantes
+</details>
+---
 
 <details>
 <summary><strong>Lab 19: RBAC ></summary>
@@ -464,42 +496,6 @@ Le es posible ver los usuarios registrados en la BD. Automáticamente al crear u
 Tiene rol de "cliente". 
 </details>
 
----
-
-<details>
-<summary><strong>Lab 18: Autentificación></summary>
-
-### 👥 Integrantes
-- Carlos Delgado Contreras
-- Sebastian Mansilla Colts
-
-### 🎯 Objetivo del laboratorio
-Se implemento un modulo de autenticación de sesión en el Proyecto de Sebastián Mansilla. 
-
-###Link a Repo 
-Link: https://github.com/M4nsi00/TC2005B_SebastianMansillaCots
-
----
-### 🏁 Commit de inicio
-Hash: `d95473111dc5aaeb2f208e1deb2e4d0fad7fdd0e`  
-Mensaje: "Avance lab18 con Charly"
-
----
-
-### ✅ Commit final evaluable
-Hash: `d1058289e2724e1ab0f8e67fcf4227e576f27b17 `  
-Mensaje: "Lab 18 terminado lo hice con Carlos"
-
----
-
-### 🔄 Rol en Pair Programming
-- Driver: Sebastian Mansilla
-- Navigator: Carlos Delgado Contreras
-
----
-
-### 📝 Notas relevantes
-</details>
 
 
 
