@@ -427,6 +427,46 @@ Mensaje: "Actualizacion de Script SQL y Lab 17 Funcional :)
 
 
 <details>
+<summary><strong>Lab 19: RBAC ></summary>
+
+### 👥 Integrantes
+- Carlos Delgado Contreras
+- Sebastian Mansilla Colts
+
+### 🎯 Objetivo del laboratorio
+Se implemento un RBAC en el Proyecto de Sebastián Mansilla. 
+
+###Link a Repo 
+Link: https://github.com/M4nsi00/TC2005B_SebastianMansillaCots
+
+---
+### 🏁 Commit de inicio
+Hash: `16163a6071dd270f6cf0451e99d4acb1d83afcd6`  
+Mensaje: "Lab 19 Inicio: RBAC listo"
+
+---
+
+### ✅ Commit final evaluable
+Hash: `8209db3479c9ae336defbdd06b58ff8714e028e9 `  
+Mensaje: "Lab 19 Finalizado de nuevo: SQL actualizado"
+
+---
+
+### 🔄 Rol en Pair Programming
+- Driver: Carlos Delgado Contreras
+- Navigator: Sebastian Mansilla
+
+---
+
+### 📝 Notas relevantes
+El RBAC es apreciable en la sección del LAB 13 donde dependiendo de los permisos del usuario
+Le es posible ver los usuarios registrados en la BD. Automáticamente al crear una cuenta el usuario
+Tiene rol de "cliente". 
+</details>
+
+---
+
+<details>
 <summary><strong>Lab 18: Autentificación></summary>
 
 ### 👥 Integrantes
@@ -460,8 +500,6 @@ Mensaje: "Lab 18 terminado lo hice con Carlos"
 
 ### 📝 Notas relevantes
 </details>
-
----
 
 
 
