@@ -497,146 +497,144 @@ Le es posible ver los usuarios registrados en la BD. Automáticamente al crear u
 Tiene rol de "cliente". 
 </details>
 
-#### 📘 Bitácora de Laboratorios Periodo 2
+# 📘 Bitácora de Laboratorios Periodo 2
 
 <details>
-<summary><strong>Lab 23: Stored procedures ></summary>
+<summary><strong>Lab 23: Stored procedures</strong></summary>
 
 ### 👥 Integrantes
 - Carlos Delgado Contreras
 
-
 ### 🎯 Objetivo del laboratorio
-Implementar Stored Procederes en el Proyecto.
+Implementar Stored Procedures en el Proyecto.
 
-###Link a Repo 
-Link:https://github.com/Citybanamex16/BlackWall-Maree.git
+### 🔗 Link a Repo
+[Repositorio BlackWall-Maree](https://github.com/Citybanamex16/BlackWall-Maree.git)
 
 ---
-### 🏁 commits de features que utilizan Strored procedures
 
-Eliminar Producto 
-Hash: `5faad02`  
-Mensaje: "feature eliminar ingredientes con Stored procedures y transacciones :)"
+### 🏁 Commits de features que utilizan Stored Procedures
 
-Promociones en Menu
-Hash: e454975
-Mensaje: "Backend PUs y PEs conectado"
+**Eliminar Producto**
+*   Hash: `5faad02`
+*   Mensaje: "feature eliminar ingredientes con Stored procedures y transacciones :)"
+
+**Promociones en Menu**
+*   Hash: `e454975`
+*   Mensaje: "Backend PUs y PEs conectado"
 
 ---
 
 ### 📝 Notas relevantes
 ¡Importante! El commit de "feature eliminar ingredientes" tiene un error pues no son ingredientes son productos, fue error mío.
-Stored procedures se utilizaron en la funcionalidad de Eliminar Producto encapsulando toda la lógica de transacción en un procedimiento invocable. Por otro lado la Stored Procedure de Promos de Menu es la mas compleja. Esta stored dependiendo del parámetro llama a las promos provenientes de Eventos, Royalty o Unicas de producto. 
+Stored procedures se utilizaron en la funcionalidad de Eliminar Producto encapsulando toda la lógica de transacción en un procedimiento invocable.
+Por otro lado la Stored Procedure de Promos de Menu es la mas compleja. Esta stored dependiendo del parámetro llama a las promos provenientes de Eventos, Royalty o Unicas de producto.
+
 </details>
 
 ---
 
 <details>
-<summary><strong>Lab 24: AJAX ></summary>
-
-### 📝 Notas Importantes
-Aproximadamente el 95% de las funcionalidades son AJAX. Dejo una lista de funcionalidades programados por mi que son Ajax
+<summary><strong>Lab 24: AJAX</strong></summary>
 
 ### 👥 Integrantes
 - Carlos Delgado Contreras
-
 
 ### 🎯 Objetivo del laboratorio
-Implementar Ajax en el Proyecto
+Implementar Ajax en el Proyecto.
 
-###Link a Repo 
-Link:https://github.com/Citybanamex16/BlackWall-Maree.git
+### 🔗 Link a Repo
+[Repositorio BlackWall-Maree](https://github.com/Citybanamex16/BlackWall-Maree.git)
 
 ---
-### 🏁 commits de features que utilizan Ajax
 
-# Titulo de Funcionalidad
-Hash Inicio 🏁  : `5faad02`  
-Mensaje: "feature eliminar ingredientes con Stored procedures y transacciones :)"
+### 📝 Notas Importantes
+Aproximadamente el 95% de las funcionalidades son AJAX. Dejo una lista de funcionalidades programados por mi que son Ajax.
 
-Hash final ☑️: 
-Mensaje:
+### 🏁 Commits de features que utilizan Ajax
 
-# Visualizar Feedback de Ordenes por Admin
-Hash Inicio 🏁  : `615ceb25d1652baa80d05894f8e2ec2461570149`  
-Mensaje: "Logica de Filtrado Finalizada"
+**1. Eliminar Producto**
+*   Hash Inicio 🏁: `5faad02`
+*   Mensaje: "feature eliminar ingredientes con Stored procedures y transacciones :)"
+*   Hash final ☑️: `...`
 
-Hash final ☑️: 98351e74e4dee0bf6a4b2e9dd392fa801b0c1d2c
-Mensaje: "Grafica de Promedio de Puntaje por mes realizada con exito"
+**2. Visualizar Feedback de Ordenes por Admin**
+*   Hash Inicio 🏁: `615ceb25d1652baa80d05894f8e2ec2461570149`
+*   Mensaje: "Logica de Filtrado Finalizada"
+*   Hash final ☑️: `98351e74e4dee0bf6a4b2e9dd392fa801b0c1d2c`
+*   Mensaje: "Grafica de Promedio de Puntaje por mes realizada con exito"
 
-# Visualizar Menu dinámico
-Hash Inicio 🏁  : `8d744437abf89dc040ba3f16b2cb7a2954bfda8e`  
-Mensaje: "Backend consulta exitosa"
+**3. Visualizar Menu dinámico**
+*   Hash Inicio 🏁: `8d744437abf89dc040ba3f16b2cb7a2954bfda8e`
+*   Mensaje: "Backend consulta exitosa"
+*   Hash final ☑️: `e5157f8ab189096a68d2e0e8e2a13fb6228e54c3`
+*   Mensaje: "Menu dinamico funcional con CSS, botones no funcionales"
 
-Hash final ☑️: e5157f8ab189096a68d2e0e8e2a13fb6228e54c3
-Mensaje: Menu dinamico funcional con CSS, botones no funcionales
+**4. Visualizar lista de Sucursales**
+*   Hash: `6039b07ca5927ad9c6502d98601cb3b37032f4d0`
+*   Mensaje: "feature Lista de sucursales lista"
 
-# Visualizar lista de Sucursales
-Hash: 6039b07ca5927ad9c6502d98601cb3b37032f4d0
-Mensaje: "feature Lista de sucursales lista"
+**5. Registrar nuevo Producto**
+*   Hash inicial: `3b4a5c9524a5e3cca4094caaf9e3977b84e3c3c0`
+*   Mensaje: 'feat Modal Product Type Functional'
+*   Hash final: `3f5bb9e435ebccd8f3606ead57c4ab01e85c71d7`
+*   Mensaje: 'Detalle'
 
-#Registrar nuevo Producto
-Hash inicial: 3b4a5c9524a5e3cca4094caaf9e3977b84e3c3c0
-Mensaje: 'feat Modal Product Type Functional'
+---
 
-Hash final: 3f5bb9e435ebccd8f3606ead57c4ab01e85c71d7
-Mensaje: 'Detalle'
-
-## Introspección: 
-Entre mas avanzaba en las funcionalidades Ajax (SPA) mas rapido y con menos comimos se realizaban las funcionalidades. Mi primera funcionalidad Ajax abarca aprox 6-7 commits. Ahora se hacen mas rápidas y eficientes. 
+### 💡 Introspección
+Entre mas avanzaba en las funcionalidades Ajax (SPA) mas rapido y con menos commits se realizaban las funcionalidades. Mi primera funcionalidad Ajax abarca aprox 6-7 commits. Ahora se hacen mas rápidas y eficientes.
 
 </details>
 
 ---
 
 <details>
-<summary><strong>Lab 25: Transacciones ></summary>
+<summary><strong>Lab 25: Transacciones</strong></summary>
 
 ### 👥 Integrantes
 - Carlos Delgado Contreras
-
 
 ### 🎯 Objetivo del laboratorio
 Implementar Transacciones en el Proyecto.
 
-###Link a Repo 
-Link:https://github.com/Citybanamex16/BlackWall-Maree.git
+### 🔗 Link a Repo
+[Repositorio BlackWall-Maree](https://github.com/Citybanamex16/BlackWall-Maree.git)
 
 ---
-### 🏁 commits de features que utilizan Transaccione
 
-Eliminar Producto 
-Hash: `5faad02`  
-Mensaje: "feature eliminar ingredientes con Stored procedures y transacciones :)"
+### 🏁 Commits de features que utilizan Transacciones
 
----
+**Eliminar Producto**
+*   Hash: `5faad02`
+*   Mensaje: "feature eliminar ingredientes con Stored procedures y transacciones :)"
+
 </details>
 
 ---
 
 <details>
-<summary><strong>Lab 26: Servicios Web ></summary>
+<summary><strong>Lab 26: Servicios Web</strong></summary>
 
 ### 👥 Integrantes
 - Carlos Delgado Contreras
 
-
 ### 🎯 Objetivo del laboratorio
 Implementar Servicios Web en el Proyecto.
 
-###Link a Repo 
-Link:https://github.com/Citybanamex16/BlackWall-Maree.git
+### 🔗 Link a Repo
+[Repositorio BlackWall-Maree](https://github.com/Citybanamex16/BlackWall-Maree.git)
 
 ---
-### 🏁 commits de features que utilizan Servicios Web
 
-Visualizar Mapa 
-Hash: `345b03e`  
-Mensaje: "feature iframe de google maps funcional"
+### 🏁 Commits de features que utilizan Servicios Web
 
----
+**Visualizar Mapa**
+*   Hash: `345b03e`
+*   Mensaje: "feature iframe de google maps funcional"
+
 </details>
+
 
 
 
